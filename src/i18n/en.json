@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Build Software. Grow Faster.",
+    "subheadline": "We build business software and growth systems that help modern businesses automate work and get customers.",
+    "cta_primary": "Book a free consult",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "mini_card_automation": "Smart Automations",
+    "mini_card_growth": "Growth Systems",
+    "mini_card_support": "24/7 Support"
+  },
+  "proof": {
+    "title": "Trusted by growing businesses",
+    "chip_websites": "Custom Websites",
+    "chip_automation": "Automations",
+    "chip_crm": "CRM Systems",
+    "chip_ecommerce": "E-commerce"
+  },
+  "solutions": {
+    "title": "Solutions We Build",
+    "subtitle": "From websites to complete business systems, we build what you need to grow.",
+    "websites": {
+      "title": "Business Websites & Landing Pages",
+      "description": "Fast, beautiful, conversion-optimized websites that represent your brand and generate leads 24/7."
+    },
+    "booking": {
+      "title": "Booking & Appointment Systems",
+      "description": "Let clients book appointments online, sync with your calendar, and automate reminders."
+    },
+    "crm": {
+      "title": "CRM & Client Follow-up Systems",
+      "description": "Never lose a lead. Track every customer interaction and automate your follow-up process."
+    },
+    "ecommerce": {
+      "title": "E-commerce & Order Management",
+      "description": "Sell online with custom storefronts, inventory management, and payment processing."
+    },
+    "automations": {
+      "title": "Automations & Integrations",
+      "description": "Connect WhatsApp, email, payments, and more. Automate repetitive tasks and save hours every week."
+    },
+    "cta": "Learn more"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Ready-to-deploy solutions built for African businesses.",
+    "view_all": "View all products",
+    "coming_soon": "Coming Soon",
+    "features": "Features",
+    "get_started": "Get Started",
+    "product_1": {
+      "title": "BridgeBook",
+      "summary": "Smart appointment booking system for service businesses.",
+      "features": ["Online booking page", "Calendar sync", "SMS/WhatsApp reminders", "Client management"]
+    },
+    "product_2": {
+      "title": "BridgeShop",
+      "summary": "Complete e-commerce solution with local payment integrations.",
+      "features": ["Product catalog", "Mobile Money payments", "Order tracking", "Inventory management"]
+    },
+    "product_3": {
+      "title": "BridgeCRM",
+      "summary": "Simple CRM designed for small teams who want to grow.",
+      "features": ["Lead tracking", "Pipeline management", "Email integration", "Automated follow-ups"]
+    },
+    "product_4": {
+      "title": "BridgeFlow",
+      "summary": "Workflow automation for repetitive business tasks.",
+      "features": ["Visual workflow builder", "WhatsApp automation", "Email sequences", "API integrations"]
+    },
+    "product_5": {
+      "title": "BridgeForms",
+      "summary": "Smart forms that capture leads and automate responses.",
+      "features": ["Drag-and-drop builder", "Conditional logic", "Auto-responders", "Analytics dashboard"]
+    },
+    "product_6": {
+      "title": "BridgeChat",
+      "summary": "Unified inbox for all your customer conversations.",
+      "features": ["Multi-channel inbox", "Team collaboration", "Canned responses", "Chatbot builder"]
+    }
+  },
+  "featured": {
+    "title": "Featured Projects",
+    "subtitle": "Real solutions we've built for real businesses.",
+    "view_case": "View case study",
+    "case_1": {
+      "title": "E-commerce Platform",
+      "client": "Fashion Retailer",
+      "description": "Custom online store with Mobile Money integration and inventory management."
+    },
+    "case_2": {
+      "title": "Booking System",
+      "client": "Medical Clinic",
+      "description": "Patient appointment system with SMS reminders and doctor scheduling."
+    },
+    "case_3": {
+      "title": "CRM Solution",
+      "client": "Real Estate Agency",
+      "description": "Lead management system with automated follow-ups and property matching."
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A simple, proven process to bring your project to life.",
+    "step_1": {
+      "title": "Discovery",
+      "description": "We learn about your business, goals, and challenges in a free consultation."
+    },
+    "step_2": {
+      "title": "Strategy",
+      "description": "We design a solution tailored to your needs with clear timelines and pricing."
+    },
+    "step_3": {
+      "title": "Build",
+      "description": "Our team builds your solution with regular updates and feedback loops."
+    },
+    "step_4": {
+      "title": "Launch & Support",
+      "description": "We launch your project and provide ongoing support to ensure success."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real feedback from businesses we've helped grow.",
+    "testimonial_1": {
+      "quote": "BridgeYou transformed our booking process. We now get 3x more appointments and never miss a follow-up.",
+      "author": "Marie K.",
+      "role": "Clinic Manager",
+      "company": "HealthFirst Clinic"
+    },
+    "testimonial_2": {
+      "quote": "The CRM they built for us is exactly what we needed. Simple to use but powerful enough to grow with us.",
+      "author": "Jean-Paul M.",
+      "role": "Sales Director",
+      "company": "Immo Cameroun"
+    },
+    "testimonial_3": {
+      "quote": "Our new website generates more leads in a month than our old one did in a year. Worth every franc.",
+      "author": "Sylvie N.",
+      "role": "Founder",
+      "company": "Style Boutique"
+    }
+  },
+  "cta_banner": {
+    "title": "Ready to Build Something Great?",
+    "subtitle": "Let's discuss your project. Free consultation, no obligation.",
+    "cta_primary": "Book a free consult",
+    "cta_whatsapp": "Chat on WhatsApp"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to common questions about working with us.",
+    "q1": {
+      "question": "How long does it take to build a website?",
+      "answer": "Most websites take 2-4 weeks depending on complexity. Simple landing pages can be done in 1 week, while complex web applications may take 2-3 months."
+    },
+    "q2": {
+      "question": "What are your payment terms?",
+      "answer": "We typically require 50% upfront to start the project, with the remaining 50% due upon completion. For larger projects, we offer milestone-based payments."
+    },
+    "q3": {
+      "question": "Do you provide ongoing support?",
+      "answer": "Yes! We offer support packages starting from basic maintenance to full managed services. All projects include 30 days of free support after launch."
+    },
+    "q4": {
+      "question": "Can you integrate with local payment systems?",
+      "answer": "Absolutely. We specialize in integrating local payment methods including Mobile Money (MTN, Orange), bank transfers, and international options like PayPal and Stripe."
+    },
+    "q5": {
+      "question": "Do you work with businesses outside Cameroon?",
+      "answer": "Yes, we work with businesses across Africa and internationally. Our team communicates in both English and French."
+    }
+  },
+  "company": {
+    "title": "About BridgeYou",
+    "subtitle": "We build software that helps businesses grow.",
+    "mission_title": "Our Mission",
+    "mission_text": "To empower businesses with modern software solutions that automate work, attract customers, and drive growth.",
+    "story_title": "Our Story",
+    "story_text": "BridgeYou was founded with a simple belief: every business deserves access to great software. We saw too many businesses struggling with outdated systems, manual processes, and missed opportunities. So we set out to build software that actually works for the way modern businesses operate.",
+    "values_title": "Our Values",
+    "value_1": {
+      "title": "Simplicity",
+      "description": "We build software that's easy to use, not just powerful."
+    },
+    "value_2": {
+      "title": "Results",
+      "description": "We measure success by the impact we create for your business."
+    },
+    "value_3": {
+      "title": "Partnership",
+      "description": "We're not vendors, we're partners invested in your growth."
+    },
+    "value_4": {
+      "title": "Innovation",
+      "description": "We stay ahead of technology to bring you the best solutions."
+    },
+    "why_title": "Why Choose BridgeYou?",
+    "why_1": "Local expertise with global standards",
+    "why_2": "Bilingual team (English & French)",
+    "why_3": "Specialized in African business needs",
+    "why_4": "Transparent pricing, no surprises",
+    "why_5": "Long-term partnership approach",
+    "leader_title": "Leadership",
+    "leader_name": "Founder & CEO",
+    "leader_bio": "Building software solutions that empower African businesses to grow and succeed in the digital economy."
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "Ready to start your project? Get in touch and let's discuss how we can help.",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "Your name",
+      "company": "Company",
+      "company_placeholder": "Your company name",
+      "email": "Email",
+      "email_placeholder": "you@company.com",
+      "phone": "Phone / WhatsApp",
+      "phone_placeholder": "+237 676 858 216",
+      "need": "What do you need?",
+      "need_placeholder": "Select an option",
+      "need_options": {
+        "website": "Website / Landing Page",
+        "booking": "Booking System",
+        "crm": "CRM / Client Management",
+        "ecommerce": "E-commerce / Online Store",
+        "automation": "Automation / Integrations",
+        "custom": "Custom Software",
+        "other": "Other"
+      },
+      "budget": "Budget Range",
+      "budget_placeholder": "Select a range",
+      "budget_options": {
+        "small": "Under 500,000 FCFA",
+        "medium": "500,000 - 2,000,000 FCFA",
+        "large": "2,000,000 - 5,000,000 FCFA",
+        "enterprise": "5,000,000+ FCFA",
+        "unsure": "Not sure yet"
+      },
+      "message": "Message",
+      "message_placeholder": "Tell us about your project...",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "success_title": "Message Sent!",
+    "success_message": "Thank you for reaching out. We'll get back to you within 24 hours.",
+    "info": {
+      "title": "Other Ways to Reach Us",
+      "whatsapp": "Chat on WhatsApp",
+      "email": "Email Us",
+      "phone": "Call Us",
+      "address_title": "Based in",
+      "address": "Douala, Cameroon"
+    }
+  },
+  "footer": {
+    "description": "We build business software and growth systems that help modern businesses automate work and get customers.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2024 BridgeYou. All rights reserved."
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us"
+  }
+}
+

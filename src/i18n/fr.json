@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "products": "Produits",
+    "company": "Entreprise",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Créez des Logiciels. Grandissez Plus Vite.",
+    "subheadline": "Nous développons des logiciels d'entreprise et des systèmes de croissance qui aident les entreprises modernes à automatiser leur travail et à acquérir des clients.",
+    "cta_primary": "Consultation gratuite",
+    "cta_whatsapp": "Discuter sur WhatsApp",
+    "mini_card_automation": "Automatisations",
+    "mini_card_growth": "Systèmes de Croissance",
+    "mini_card_support": "Support 24/7"
+  },
+  "proof": {
+    "title": "La confiance des entreprises en croissance",
+    "chip_websites": "Sites Web Sur Mesure",
+    "chip_automation": "Automatisations",
+    "chip_crm": "Systèmes CRM",
+    "chip_ecommerce": "E-commerce"
+  },
+  "solutions": {
+    "title": "Nos Solutions",
+    "subtitle": "Des sites web aux systèmes d'entreprise complets, nous construisons ce dont vous avez besoin pour grandir.",
+    "websites": {
+      "title": "Sites Web & Landing Pages",
+      "description": "Sites web rapides, beaux et optimisés pour la conversion qui représentent votre marque et génèrent des prospects 24h/24."
+    },
+    "booking": {
+      "title": "Systèmes de Réservation",
+      "description": "Permettez à vos clients de réserver en ligne, synchronisez avec votre calendrier et automatisez les rappels."
+    },
+    "crm": {
+      "title": "CRM & Suivi Client",
+      "description": "Ne perdez plus jamais un prospect. Suivez chaque interaction client et automatisez votre processus de suivi."
+    },
+    "ecommerce": {
+      "title": "E-commerce & Gestion des Commandes",
+      "description": "Vendez en ligne avec des boutiques personnalisées, la gestion des stocks et le traitement des paiements."
+    },
+    "automations": {
+      "title": "Automatisations & Intégrations",
+      "description": "Connectez WhatsApp, email, paiements et plus encore. Automatisez les tâches répétitives et économisez des heures chaque semaine."
+    },
+    "cta": "En savoir plus"
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Solutions prêtes à déployer, conçues pour les entreprises africaines.",
+    "view_all": "Voir tous les produits",
+    "coming_soon": "Bientôt Disponible",
+    "features": "Fonctionnalités",
+    "get_started": "Commencer",
+    "product_1": {
+      "title": "BridgeBook",
+      "summary": "Système de réservation intelligent pour les entreprises de services.",
+      "features": ["Page de réservation en ligne", "Synchronisation calendrier", "Rappels SMS/WhatsApp", "Gestion des clients"]
+    },
+    "product_2": {
+      "title": "BridgeShop",
+      "summary": "Solution e-commerce complète avec intégrations de paiement locales.",
+      "features": ["Catalogue produits", "Paiements Mobile Money", "Suivi des commandes", "Gestion des stocks"]
+    },
+    "product_3": {
+      "title": "BridgeCRM",
+      "summary": "CRM simple conçu pour les petites équipes qui veulent grandir.",
+      "features": ["Suivi des prospects", "Gestion du pipeline", "Intégration email", "Relances automatiques"]
+    },
+    "product_4": {
+      "title": "BridgeFlow",
+      "summary": "Automatisation des workflows pour les tâches répétitives.",
+      "features": ["Constructeur visuel", "Automatisation WhatsApp", "Séquences email", "Intégrations API"]
+    },
+    "product_5": {
+      "title": "BridgeForms",
+      "summary": "Formulaires intelligents qui capturent des leads et automatisent les réponses.",
+      "features": ["Constructeur glisser-déposer", "Logique conditionnelle", "Répondeurs automatiques", "Tableau de bord analytique"]
+    },
+    "product_6": {
+      "title": "BridgeChat",
+      "summary": "Boîte de réception unifiée pour toutes vos conversations clients.",
+      "features": ["Boîte multi-canal", "Collaboration d'équipe", "Réponses prédéfinies", "Constructeur de chatbot"]
+    }
+  },
+  "featured": {
+    "title": "Projets Vedettes",
+    "subtitle": "Des solutions réelles que nous avons construites pour de vraies entreprises.",
+    "view_case": "Voir l'étude de cas",
+    "case_1": {
+      "title": "Plateforme E-commerce",
+      "client": "Détaillant Mode",
+      "description": "Boutique en ligne personnalisée avec intégration Mobile Money et gestion des stocks."
+    },
+    "case_2": {
+      "title": "Système de Réservation",
+      "client": "Clinique Médicale",
+      "description": "Système de rendez-vous patients avec rappels SMS et planning des médecins."
+    },
+    "case_3": {
+      "title": "Solution CRM",
+      "client": "Agence Immobilière",
+      "description": "Système de gestion des prospects avec relances automatiques et matching de propriétés."
+    }
+  },
+  "process": {
+    "title": "Notre Processus",
+    "subtitle": "Un processus simple et éprouvé pour donner vie à votre projet.",
+    "step_1": {
+      "title": "Découverte",
+      "description": "Nous découvrons votre entreprise, vos objectifs et vos défis lors d'une consultation gratuite."
+    },
+    "step_2": {
+      "title": "Stratégie",
+      "description": "Nous concevons une solution adaptée à vos besoins avec des délais et tarifs clairs."
+    },
+    "step_3": {
+      "title": "Développement",
+      "description": "Notre équipe construit votre solution avec des mises à jour régulières et des retours."
+    },
+    "step_4": {
+      "title": "Lancement & Support",
+      "description": "Nous lançons votre projet et fournissons un support continu pour assurer votre succès."
+    }
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "subtitle": "Retours réels d'entreprises que nous avons aidées à grandir.",
+    "testimonial_1": {
+      "quote": "BridgeYou a transformé notre processus de réservation. Nous avons maintenant 3x plus de rendez-vous et ne manquons jamais un suivi.",
+      "author": "Marie K.",
+      "role": "Directrice de Clinique",
+      "company": "Clinique HealthFirst"
+    },
+    "testimonial_2": {
+      "quote": "Le CRM qu'ils ont construit pour nous est exactement ce dont nous avions besoin. Simple à utiliser mais assez puissant pour grandir avec nous.",
+      "author": "Jean-Paul M.",
+      "role": "Directeur Commercial",
+      "company": "Immo Cameroun"
+    },
+    "testimonial_3": {
+      "quote": "Notre nouveau site génère plus de prospects en un mois que l'ancien en un an. Chaque franc en valait la peine.",
+      "author": "Sylvie N.",
+      "role": "Fondatrice",
+      "company": "Style Boutique"
+    }
+  },
+  "cta_banner": {
+    "title": "Prêt à Créer Quelque Chose de Grand ?",
+    "subtitle": "Discutons de votre projet. Consultation gratuite, sans engagement.",
+    "cta_primary": "Consultation gratuite",
+    "cta_whatsapp": "Discuter sur WhatsApp"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Obtenez des réponses aux questions courantes sur notre travail.",
+    "q1": {
+      "question": "Combien de temps faut-il pour créer un site web ?",
+      "answer": "La plupart des sites prennent 2 à 4 semaines selon la complexité. Les landing pages simples peuvent être faites en 1 semaine, tandis que les applications web complexes peuvent prendre 2-3 mois."
+    },
+    "q2": {
+      "question": "Quelles sont vos conditions de paiement ?",
+      "answer": "Nous demandons généralement 50% d'avance pour démarrer le projet, le reste étant dû à la livraison. Pour les grands projets, nous proposons des paiements par étapes."
+    },
+    "q3": {
+      "question": "Offrez-vous un support continu ?",
+      "answer": "Oui ! Nous proposons des forfaits de support allant de la maintenance basique aux services gérés complets. Tous les projets incluent 30 jours de support gratuit après le lancement."
+    },
+    "q4": {
+      "question": "Pouvez-vous intégrer les systèmes de paiement locaux ?",
+      "answer": "Absolument. Nous nous spécialisons dans l'intégration des méthodes de paiement locales incluant Mobile Money (MTN, Orange), virements bancaires, et options internationales comme PayPal et Stripe."
+    },
+    "q5": {
+      "question": "Travaillez-vous avec des entreprises hors du Cameroun ?",
+      "answer": "Oui, nous travaillons avec des entreprises à travers l'Afrique et à l'international. Notre équipe communique en anglais et en français."
+    }
+  },
+  "company": {
+    "title": "À Propos de BridgeYou",
+    "subtitle": "Nous construisons des logiciels qui aident les entreprises à grandir.",
+    "mission_title": "Notre Mission",
+    "mission_text": "Donner aux entreprises les moyens d'agir avec des solutions logicielles modernes qui automatisent le travail, attirent les clients et stimulent la croissance.",
+    "story_title": "Notre Histoire",
+    "story_text": "BridgeYou a été fondé avec une conviction simple : chaque entreprise mérite d'avoir accès à de bons logiciels. Nous avons vu trop d'entreprises lutter avec des systèmes obsolètes, des processus manuels et des opportunités manquées. Alors nous avons décidé de créer des logiciels qui fonctionnent vraiment pour les entreprises modernes.",
+    "values_title": "Nos Valeurs",
+    "value_1": {
+      "title": "Simplicité",
+      "description": "Nous créons des logiciels faciles à utiliser, pas seulement puissants."
+    },
+    "value_2": {
+      "title": "Résultats",
+      "description": "Nous mesurons le succès par l'impact que nous créons pour votre entreprise."
+    },
+    "value_3": {
+      "title": "Partenariat",
+      "description": "Nous ne sommes pas des fournisseurs, nous sommes des partenaires investis dans votre croissance."
+    },
+    "value_4": {
+      "title": "Innovation",
+      "description": "Nous restons en avance sur la technologie pour vous apporter les meilleures solutions."
+    },
+    "why_title": "Pourquoi Choisir BridgeYou ?",
+    "why_1": "Expertise locale avec standards internationaux",
+    "why_2": "Équipe bilingue (Anglais & Français)",
+    "why_3": "Spécialisés dans les besoins des entreprises africaines",
+    "why_4": "Tarification transparente, sans surprises",
+    "why_5": "Approche de partenariat à long terme",
+    "leader_title": "Direction",
+    "leader_name": "Fondateur & PDG",
+    "leader_bio": "Créer des solutions logicielles qui permettent aux entreprises africaines de grandir et réussir dans l'économie numérique."
+  },
+  "contact": {
+    "title": "Parlons",
+    "subtitle": "Prêt à démarrer votre projet ? Contactez-nous et discutons de comment nous pouvons vous aider.",
+    "form": {
+      "name": "Nom Complet",
+      "name_placeholder": "Votre nom",
+      "company": "Entreprise",
+      "company_placeholder": "Nom de votre entreprise",
+      "email": "Email",
+      "email_placeholder": "vous@entreprise.com",
+      "phone": "Téléphone / WhatsApp",
+      "phone_placeholder": "+237 676 858 216",
+      "need": "De quoi avez-vous besoin ?",
+      "need_placeholder": "Sélectionnez une option",
+      "need_options": {
+        "website": "Site Web / Landing Page",
+        "booking": "Système de Réservation",
+        "crm": "CRM / Gestion Client",
+        "ecommerce": "E-commerce / Boutique en Ligne",
+        "automation": "Automatisation / Intégrations",
+        "custom": "Logiciel Sur Mesure",
+        "other": "Autre"
+      },
+      "budget": "Budget Estimé",
+      "budget_placeholder": "Sélectionnez une fourchette",
+      "budget_options": {
+        "small": "Moins de 500 000 FCFA",
+        "medium": "500 000 - 2 000 000 FCFA",
+        "large": "2 000 000 - 5 000 000 FCFA",
+        "enterprise": "5 000 000+ FCFA",
+        "unsure": "Pas encore sûr"
+      },
+      "message": "Message",
+      "message_placeholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message",
+      "submitting": "Envoi en cours..."
+    },
+    "success_title": "Message Envoyé !",
+    "success_message": "Merci de nous avoir contactés. Nous vous répondrons dans les 24 heures.",
+    "info": {
+      "title": "Autres Moyens de Nous Joindre",
+      "whatsapp": "Discuter sur WhatsApp",
+      "email": "Nous Envoyer un Email",
+      "phone": "Nous Appeler",
+      "address_title": "Basé à",
+      "address": "Douala, Cameroun"
+    }
+  },
+  "footer": {
+    "description": "Nous construisons des logiciels d'entreprise et des systèmes de croissance qui aident les entreprises modernes à automatiser leur travail et à acquérir des clients.",
+    "solutions": "Solutions",
+    "company": "Entreprise",
+    "about": "À Propos",
+    "contact": "Contact",
+    "legal": "Légal",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "copyright": "© 2024 BridgeYou. Tous droits réservés."
+  },
+  "whatsapp": {
+    "tooltip": "Discuter avec nous"
+  }
+}
+

@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-button shadow-sm-soft transition-all duration-200 hover:bg-primary-600 hover:shadow-soft hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-text font-semibold rounded-button border border-border shadow-sm-soft transition-all duration-200 hover:border-primary/30 hover:shadow-soft hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent-green text-white font-semibold rounded-button shadow-sm-soft transition-all duration-200 hover:brightness-110 hover:shadow-soft hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card p-6 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-soft hover:-translate-y-1;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent-yellow bg-clip-text text-transparent;
+  }
+
+  .mini-card {
+    @apply absolute bg-white rounded-xl shadow-card p-3 sm:p-4 flex items-center gap-2 sm:gap-3 animate-float;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
