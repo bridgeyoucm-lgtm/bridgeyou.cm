@@ -17,7 +17,7 @@
     "metric_label": "Bookings · 30d"
   },
   "proof": {
-    "title": "Trusted by teams building across Cameroon & beyond"
+    "title": "Trusted by businesses we've built for"
   },
   "solutions": {
     "eyebrow": "What we build",
@@ -118,25 +118,25 @@
   },
   "featured": {
     "eyebrow": "Selected work",
-    "heading_rich": "Results, not <italic>rhetoric.</italic>",
-    "read_case": "Read case",
+    "heading_rich": "Real clients. <italic>Real builds.</italic>",
+    "read_case": "View project",
     "case_1": {
-      "tag": "Healthcare · Douala",
-      "metric": "3× appointments",
-      "quote": "We replaced a paper logbook with BridgeBook in a weekend. Our reception team got their afternoons back.",
-      "client": "Clinique Aurore"
+      "tag": "Global trade · Douala",
+      "metric": "3 continents",
+      "quote": "An international trading site for VDEMA LTD — covering commodity listings, warehouse capacity, and buyer enquiries across the US, Europe and Africa.",
+      "client": "VDEMA LTD"
     },
     "case_2": {
-      "tag": "Retail · Douala",
-      "metric": "+214% revenue",
-      "quote": "Finally a checkout that speaks Mobile Money first. Our repeat customers doubled in two months.",
-      "client": "Marché Mokolo"
+      "tag": "E-commerce · Cameroon",
+      "metric": "Cameroon-first",
+      "quote": "Jemo.cm — our in-house e-commerce platform positioned as Cameroon's trusted shop, built around Mobile Money checkout and local delivery from day one.",
+      "client": "Jemo.cm"
     },
     "case_3": {
-      "tag": "Real estate · Bonanjo",
-      "metric": "-60% response time",
-      "quote": "Leads no longer fall through WhatsApp. The team picks up a ringing pipeline every morning.",
-      "client": "Résidence Bonanjo"
+      "tag": "Hospitality · Bonamoussadi",
+      "metric": "One system",
+      "quote": "A full lounge management system for Beverly's Lounge in Bonamoussadi — orders, stock and staff rotations unified where there used to be three notebooks.",
+      "client": "Beverly's Lounge"
     }
   },
   "process": {
@@ -161,25 +161,25 @@
     }
   },
   "testimonials": {
-    "eyebrow": "Kind words",
-    "heading_rich": "Operators, founders<br/>and <italic>real customers.</italic>",
+    "eyebrow": "In their words",
+    "heading_rich": "Founders who <italic>actually ship.</italic>",
     "testimonial_1": {
-      "quote": "BridgeYou didn't just ship our site — they rebuilt how we intake patients. Our no-shows dropped by half.",
-      "author": "Dr. Estelle Mbarga",
-      "role": "Founder",
-      "company": "Clinique Aurore"
+      "quote": "BridgeYou delivered a site that speaks to international buyers — clean, professional, and built to handle commodity trading across three continents. They understood our scale.",
+      "author": "Van Donald Antiero",
+      "role": "Director",
+      "company": "VDEMA LTD"
     },
     "testimonial_2": {
-      "quote": "We went from three WhatsApp numbers and a Google Sheet to one place. The team stopped losing orders.",
-      "author": "Kwame Bassong",
-      "role": "Operations Lead",
-      "company": "Marché Mokolo"
+      "quote": "They built Primeselar from the ground up. The platform now handles our entire digital services catalog — subscriptions, streaming, virtual numbers — all paid with MTN and Orange Money.",
+      "author": "Nkenfack Teddy",
+      "role": "Founder",
+      "company": "Primeselar"
     },
     "testimonial_3": {
-      "quote": "They understand Cameroon — Mobile Money, bilingual customers, how we actually work. That's rare.",
-      "author": "Aïcha Tchoua",
-      "role": "MD",
-      "company": "Bonanjo Résidences"
+      "quote": "Our orders, stock and staff shifts used to live in three different notebooks. BridgeYou put everything in one system — we run the lounge with two fewer headaches every night.",
+      "author": "Beverly's Lounge team",
+      "role": "Management",
+      "company": "Beverly's Lounge · Bonamoussadi"
     }
   },
   "cta_banner": {

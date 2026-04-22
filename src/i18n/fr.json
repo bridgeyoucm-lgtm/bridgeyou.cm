@@ -17,7 +17,7 @@
     "metric_label": "Réservations · 30j"
   },
   "proof": {
-    "title": "La confiance des équipes qui construisent au Cameroun et au-delà"
+    "title": "Ils nous ont fait confiance"
   },
   "solutions": {
     "eyebrow": "Ce que nous construisons",
@@ -118,25 +118,25 @@
   },
   "featured": {
     "eyebrow": "Sélection de travaux",
-    "heading_rich": "Des résultats, pas des <italic>discours.</italic>",
-    "read_case": "Voir le cas",
+    "heading_rich": "Vrais clients. <italic>Vrais projets.</italic>",
+    "read_case": "Voir le projet",
     "case_1": {
-      "tag": "Santé · Douala",
-      "metric": "3× rendez-vous",
-      "quote": "Nous avons remplacé un cahier papier par BridgeBook en un week-end. L'équipe d'accueil a retrouvé ses après-midis.",
-      "client": "Clinique Aurore"
+      "tag": "Commerce international · Douala",
+      "metric": "3 continents",
+      "quote": "Un site de trading international pour VDEMA LTD — catalogue de matières premières, capacités logistiques et demandes d'acheteurs à travers les États-Unis, l'Europe et l'Afrique.",
+      "client": "VDEMA LTD"
     },
     "case_2": {
-      "tag": "Commerce · Douala",
-      "metric": "+214% de revenu",
-      "quote": "Enfin un checkout qui parle Mobile Money d'abord. Nos clients récurrents ont doublé en deux mois.",
-      "client": "Marché Mokolo"
+      "tag": "E-commerce · Cameroun",
+      "metric": "Cameroon-first",
+      "quote": "Jemo.cm — notre plateforme e-commerce positionnée comme la boutique de confiance du Cameroun, conçue autour du Mobile Money et de la livraison locale dès le premier jour.",
+      "client": "Jemo.cm"
     },
     "case_3": {
-      "tag": "Immobilier · Bonanjo",
-      "metric": "-60% de délai",
-      "quote": "Les prospects ne se perdent plus dans WhatsApp. L'équipe démarre chaque matin avec un pipeline prêt.",
-      "client": "Résidence Bonanjo"
+      "tag": "Hôtellerie · Bonamoussadi",
+      "metric": "Un seul système",
+      "quote": "Un système complet de gestion pour Beverly's Lounge à Bonamoussadi — commandes, stocks et rotations du personnel unifiés là où il y avait trois cahiers.",
+      "client": "Beverly's Lounge"
     }
   },
   "process": {
@@ -162,24 +162,24 @@
   },
   "testimonials": {
     "eyebrow": "Paroles reçues",
-    "heading_rich": "Opérateurs, fondateurs<br/>et <italic>vrais clients.</italic>",
+    "heading_rich": "Des fondateurs qui <italic>livrent vraiment.</italic>",
     "testimonial_1": {
-      "quote": "BridgeYou n'a pas juste livré un site — ils ont revu comment nous accueillons les patients. Nos absences ont chuté de moitié.",
-      "author": "Dr. Estelle Mbarga",
-      "role": "Fondatrice",
-      "company": "Clinique Aurore"
+      "quote": "BridgeYou a livré un site qui parle aux acheteurs internationaux — clair, professionnel, conçu pour gérer le trading de matières premières sur trois continents. Ils ont compris notre échelle.",
+      "author": "Van Donald Antiero",
+      "role": "Directeur",
+      "company": "VDEMA LTD"
     },
     "testimonial_2": {
-      "quote": "On est passés de trois numéros WhatsApp et un Google Sheet à un seul endroit. L'équipe ne perd plus de commandes.",
-      "author": "Kwame Bassong",
-      "role": "Responsable Ops",
-      "company": "Marché Mokolo"
+      "quote": "Ils ont construit Primeselar de zéro. La plateforme gère désormais tout notre catalogue de services numériques — abonnements, streaming, numéros virtuels — avec paiement MTN et Orange Money.",
+      "author": "Nkenfack Teddy",
+      "role": "Fondateur",
+      "company": "Primeselar"
     },
     "testimonial_3": {
-      "quote": "Ils comprennent le Cameroun — Mobile Money, clients bilingues, notre vraie façon de travailler. C'est rare.",
-      "author": "Aïcha Tchoua",
-      "role": "Directrice",
-      "company": "Bonanjo Résidences"
+      "quote": "Nos commandes, stocks et plannings vivaient dans trois cahiers différents. BridgeYou a tout rassemblé dans un seul système — on gère le lounge avec deux problèmes de moins chaque soir.",
+      "author": "L'équipe Beverly's Lounge",
+      "role": "Direction",
+      "company": "Beverly's Lounge · Bonamoussadi"
     }
   },
   "cta_banner": {

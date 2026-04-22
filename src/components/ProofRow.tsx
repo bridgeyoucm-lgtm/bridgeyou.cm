@@ -8,12 +8,10 @@ interface LogoItem {
 }
 
 const logos: LogoItem[] = [
-  { name: 'Clinique Aurore', style: 'serif' },
-  { name: 'MARCHÉ MOKOLO', style: 'caps' },
-  { name: 'Bonanjo Résidences', style: 'serif-italic' },
-  { name: 'BAOBAB TECH', style: 'caps' },
-  { name: 'kola.', style: 'lower' },
-  { name: 'Ndolè Coffee Co.', style: 'serif' },
+  { name: 'VDEMA LTD', style: 'caps' },
+  { name: 'Primeselar', style: 'serif' },
+  { name: "Beverly's Lounge", style: 'serif-italic' },
+  { name: 'JEMO', style: 'caps' },
 ];
 
 export default function ProofRow() {
@@ -22,7 +20,7 @@ export default function ProofRow() {
     <div className="bg-white border-b border-line">
       <div className="container-custom py-12 md:py-14">
         <div className="mono-caption text-center mb-7">{t('proof.title')}</div>
-        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
+        <div className="flex flex-wrap items-center justify-center gap-x-12 md:gap-x-16 gap-y-4">
           {logos.map((logo) => (
             <div
               key={logo.name}
