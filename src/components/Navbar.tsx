@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggle';
-import logo from '../assets/logo.PNG';
+import Logo from './Logo';
+import Icon from './Icon';
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -18,99 +19,75 @@ export default function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
+    <header
+      className="sticky top-0 z-50 border-b border-line"
+      style={{ background: 'rgba(246,248,251,0.72)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' }}
+    >
       <nav className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="BridgeYou" className="h-8 md:h-10 w-auto" />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`text-body-sm font-medium transition-colors ${
-                  isActive(link.href)
-                    ? 'text-primary'
-                    : 'text-text-muted hover:text-text'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+        <div className="flex items-center justify-between h-16 lg:h-[68px]">
+          <div className="flex items-center gap-10">
+            <Link to="/" aria-label="BridgeYou home" className="flex items-center">
+              <Logo size={20} />
+            </Link>
+            <div className="hidden lg:flex items-center gap-7">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`text-[14px] font-medium transition-colors ${
+                    isActive(link.href) ? 'text-ink' : 'text-muted hover:text-ink'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
-          {/* Right side */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3.5">
             <LanguageToggle />
-            <Link to="/contact" className="btn-primary">
-              {t('nav.contact')}
+            <Link to="/contact" className="btn-ink">
+              {t('nav.book_consult')}
+              <Icon name="arrow" size={14} />
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-lg hover:bg-line2 transition-colors"
             aria-label="Toggle menu"
           >
-            <svg
-              className="w-6 h-6 text-text"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {mobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            <Icon name={mobileMenuOpen ? 'close' : 'menu'} size={22} stroke="#101828" sw={1.8} />
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-2">
+          <div className="lg:hidden py-4 border-t border-line animate-fade-in">
+            <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-body font-medium transition-colors ${
-                    isActive(link.href)
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-text-muted hover:bg-gray-50 hover:text-text'
+                  className={`px-4 py-3 rounded-lg text-[15px] font-medium transition-colors ${
+                    isActive(link.href) ? 'bg-primary/10 text-primary' : 'text-muted hover:bg-line2 hover:text-ink'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
               <div className="px-4 py-3 flex items-center justify-between">
-                <span className="text-body-sm text-text-muted">Language</span>
+                <span className="text-[13px] text-muted">Language</span>
                 <LanguageToggle />
               </div>
               <div className="px-4 pt-2">
                 <Link
                   to="/contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="btn-primary w-full"
+                  className="btn-ink w-full justify-center"
                 >
-                  {t('nav.contact')}
+                  {t('nav.book_consult')}
+                  <Icon name="arrow" size={14} />
                 </Link>
               </div>
             </div>
@@ -120,4 +97,3 @@ export default function Navbar() {
     </header>
   );
 }
-

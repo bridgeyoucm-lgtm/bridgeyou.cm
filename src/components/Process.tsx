@@ -1,87 +1,79 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import EyebrowTag from './EyebrowTag';
+import Icon, { type IconName } from './Icon';
 
-const steps = [
-  {
-    key: 'step_1',
-    number: '01',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
-    ),
-  },
-  {
-    key: 'step_2',
-    number: '02',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-      </svg>
-    ),
-  },
-  {
-    key: 'step_3',
-    number: '03',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-      </svg>
-    ),
-  },
-  {
-    key: 'step_4',
-    number: '04',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    ),
-  },
+interface Step {
+  n: string;
+  key: string;
+  icon: IconName;
+}
+
+const steps: Step[] = [
+  { n: '01', key: 'step_1', icon: 'search' },
+  { n: '02', key: 'step_2', icon: 'sparkle' },
+  { n: '03', key: 'step_3', icon: 'zap' },
+  { n: '04', key: 'step_4', icon: 'arrowUp' },
 ];
 
 export default function Process() {
   const { t } = useTranslation();
-
   return (
-    <section className="section bg-background">
-      <div className="container-custom">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-display text-heading-1 text-text mb-4">
-            {t('process.title')}
-          </h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+    <section className="section-y relative overflow-hidden text-white" style={{ background: '#101828' }}>
+      <div
+        className="absolute pointer-events-none rounded-full"
+        style={{
+          top: -200, right: -200, width: 600, height: 600,
+          background: 'radial-gradient(circle, rgba(255,145,77,0.22), transparent 70%)',
+        }}
+      />
+      <div className="container-custom relative">
+        <div className="grid md:grid-cols-2 gap-8 items-end mb-14">
+          <div>
+            <EyebrowTag tone="orange">{t('process.eyebrow')}</EyebrowTag>
+            <h2
+              className="font-display font-medium mt-4"
+              style={{ fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '-0.03em', lineHeight: 1.02 }}
+            >
+              <Trans
+                i18nKey="process.heading_rich"
+                components={{
+                  italic: <span className="italic" style={{ color: '#FF914D' }} />,
+                  br: <br />,
+                }}
+              />
+            </h2>
+          </div>
+          <p className="text-[16px] leading-relaxed max-w-lg md:justify-self-end" style={{ color: '#8A94A6' }}>
             {t('process.subtitle')}
           </p>
         </div>
-
-        {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step, index) => (
-            <div key={step.key} className="relative">
-              {/* Connector line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent" />
-              )}
-              
-              <div className="text-center">
-                {/* Number circle */}
-                <div className="relative inline-flex mb-6">
-                  <div className="w-20 h-20 bg-gradient-cta rounded-full flex items-center justify-center shadow-soft">
-                    <span className="text-white">{step.icon}</span>
-                  </div>
-                  <span className="absolute -bottom-2 -right-2 w-8 h-8 bg-white rounded-full flex items-center justify-center text-body-sm font-bold text-primary shadow-card">
-                    {step.number}
-                  </span>
-                </div>
-
-                {/* Content */}
-                <h3 className="text-heading-3 text-text mb-3">
-                  {t(`process.${step.key}.title`)}
-                </h3>
-                <p className="text-body text-text-muted">
-                  {t(`process.${step.key}.description`)}
-                </p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-5 relative">
+          <div
+            className="hidden md:block absolute"
+            style={{ top: 26, left: '8%', right: '8%', height: 1, borderTop: '1px dashed #1F2836' }}
+          />
+          {steps.map((s) => (
+            <div key={s.n} className="relative z-10">
+              <div
+                className="flex items-center justify-center mb-5"
+                style={{
+                  width: 52, height: 52, borderRadius: 26,
+                  background: '#121822', border: '1px solid #1F2836', color: '#FF914D',
+                }}
+              >
+                <Icon name={s.icon} size={22} sw={1.6} />
+              </div>
+              <div className="font-mono text-[11px] mb-1.5" style={{ color: '#FF914D', letterSpacing: '0.05em' }}>
+                {s.n}
+              </div>
+              <div
+                className="font-display font-medium mb-2"
+                style={{ fontSize: 26, letterSpacing: '-0.02em' }}
+              >
+                {t(`process.${s.key}.title`)}
+              </div>
+              <div className="text-[14px] leading-relaxed" style={{ color: '#8A94A6' }}>
+                {t(`process.${s.key}.description`)}
               </div>
             </div>
           ))}
@@ -90,4 +82,3 @@ export default function Process() {
     </section>
   );
 }
-

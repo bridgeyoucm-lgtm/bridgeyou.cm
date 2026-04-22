@@ -1,55 +1,85 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import EyebrowTag from './EyebrowTag';
 
-const testimonials = [
-  { key: 'testimonial_1', avatar: 'MK' },
-  { key: 'testimonial_2', avatar: 'JP' },
-  { key: 'testimonial_3', avatar: 'SN' },
+type Tone = 'warm' | 'green' | 'blush';
+type Accent = '#FF914D' | '#7ED957' | '#FFBD59';
+
+interface TItem {
+  key: string;
+  tone: Tone;
+  accent: Accent;
+}
+
+const testimonials: TItem[] = [
+  { key: 'testimonial_1', tone: 'warm', accent: '#FF914D' },
+  { key: 'testimonial_2', tone: 'green', accent: '#7ED957' },
+  { key: 'testimonial_3', tone: 'blush', accent: '#FFBD59' },
 ];
+
+const tonePalettes: Record<Tone, string> = {
+  warm: 'linear-gradient(135deg, #FFD7B5 0%, #FFBD59 50%, #FF914D 100%)',
+  green: 'linear-gradient(135deg, #D4F5C6 0%, #9FE87E 50%, #7ED957 100%)',
+  blush: 'linear-gradient(135deg, #FFE0CC 0%, #FFC9A3 100%)',
+};
 
 export default function Testimonials() {
   const { t } = useTranslation();
-
   return (
-    <section className="section bg-white">
+    <section className="section-y bg-white">
       <div className="container-custom">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-display text-heading-1 text-text mb-4">
-            {t('testimonials.title')}
+        <div className="text-center mb-11">
+          <EyebrowTag tone="green">{t('testimonials.eyebrow')}</EyebrowTag>
+          <h2
+            className="font-display font-medium text-ink mt-4 mx-auto max-w-2xl"
+            style={{ fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '-0.03em', lineHeight: 1.05 }}
+          >
+            <Trans
+              i18nKey="testimonials.heading_rich"
+              components={{
+                italic: <span className="italic" style={{ color: '#FF914D' }} />,
+                br: <br />,
+              }}
+            />
           </h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
-            {t('testimonials.subtitle')}
-          </p>
         </div>
-
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
+        <div className="grid md:grid-cols-3 gap-5">
+          {testimonials.map((it) => (
             <div
-              key={testimonial.key}
-              className="card bg-gradient-soft-1 border border-white/50"
+              key={it.key}
+              className="flex flex-col gap-5"
+              style={{
+                background: '#FFFFFF', border: '1px solid #EAECF0',
+                borderRadius: 20, padding: 28,
+              }}
             >
-              {/* Quote icon */}
-              <svg className="w-10 h-10 text-primary/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              <svg width="32" height="22" viewBox="0 0 32 22" fill="none" aria-hidden="true">
+                <path
+                  d="M0 22V13C0 6 3 1 10 0L12 3C8 5 7 8 7 11H12V22H0ZM18 22V13C18 6 21 1 28 0L30 3C26 5 25 8 25 11H30V22H18Z"
+                  fill={it.accent}
+                />
               </svg>
-
-              {/* Quote */}
-              <p className="text-body text-text leading-relaxed mb-6">
-                "{t(`testimonials.${testimonial.key}.quote`)}"
-              </p>
-
-              {/* Author */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-cta rounded-full flex items-center justify-center text-white font-semibold">
-                  {testimonial.avatar}
-                </div>
+              <div
+                className="font-display flex-1"
+                style={{
+                  fontSize: 21, lineHeight: 1.4, letterSpacing: '-0.01em',
+                  color: '#101828',
+                }}
+              >
+                "{t(`testimonials.${it.key}.quote`)}"
+              </div>
+              <div className="flex items-center gap-3 pt-2" style={{ borderTop: '1px solid #F2F4F7' }}>
+                <div
+                  style={{
+                    width: 44, height: 44, borderRadius: 22,
+                    background: tonePalettes[it.tone],
+                  }}
+                />
                 <div>
-                  <div className="font-semibold text-text">
-                    {t(`testimonials.${testimonial.key}.author`)}
+                  <div className="text-[14px] font-semibold text-ink">
+                    {t(`testimonials.${it.key}.author`)}
                   </div>
-                  <div className="text-body-sm text-text-muted">
-                    {t(`testimonials.${testimonial.key}.role`)}, {t(`testimonials.${testimonial.key}.company`)}
+                  <div className="text-[12px] text-muted">
+                    {t(`testimonials.${it.key}.role`)} · {t(`testimonials.${it.key}.company`)}
                   </div>
                 </div>
               </div>
@@ -60,4 +90,3 @@ export default function Testimonials() {
     </section>
   );
 }
-

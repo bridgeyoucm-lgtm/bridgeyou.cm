@@ -1,43 +1,38 @@
 import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import CTA from '../components/CTA';
+import EyebrowTag from '../components/EyebrowTag';
+import Icon, { type IconName } from '../components/Icon';
+import nfonJosephPhoto from '../assets/nfon-joseph.jpeg';
 
-const values = [
-  {
-    id: 'value_1',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
-  },
-  {
-    id: 'value_2',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    ),
-  },
-  {
-    id: 'value_3',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-      </svg>
-    ),
-  },
-  {
-    id: 'value_4',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-    ),
-  },
+interface Value {
+  id: string;
+  icon: IconName;
+  accent: string;
+}
+
+const values: Value[] = [
+  { id: 'value_1', icon: 'spark', accent: '#FF914D' },
+  { id: 'value_2', icon: 'arrowUp', accent: '#7ED957' },
+  { id: 'value_3', icon: 'users', accent: '#FFBD59' },
+  { id: 'value_4', icon: 'sparkle', accent: '#FF914D' },
 ];
 
-const whyUs = ['why_1', 'why_2', 'why_3', 'why_4', 'why_5'];
+const whyItems = ['why_1', 'why_2', 'why_3', 'why_4', 'why_5'];
+
+interface MetricItem {
+  k: string;
+  v: string;
+  c: string;
+}
+
+const metrics: MetricItem[] = [
+  { k: 'Douala', v: 'metric_based', c: '#FF914D' },
+  { k: 'Africa', v: 'metric_coverage', c: '#7ED957' },
+  { k: '24h', v: 'metric_reply', c: '#FFBD59' },
+  { k: 'EN/FR', v: 'metric_bilingual', c: '#101828' },
+];
+
 
 export default function Company() {
   const { t, i18n } = useTranslation();
@@ -45,12 +40,12 @@ export default function Company() {
 
   const meta = {
     en: {
-      title: 'About Us - BridgeYou',
-      description: 'Learn about BridgeYou, our mission, values, and why businesses choose us for their software needs.',
+      title: 'Company — BridgeYou',
+      description: 'A Douala-based software studio serving clients across Africa — building the tools modern businesses actually need.',
     },
     fr: {
-      title: 'À Propos - BridgeYou',
-      description: 'Découvrez BridgeYou, notre mission, nos valeurs et pourquoi les entreprises nous choisissent pour leurs besoins logiciels.',
+      title: 'Société — BridgeYou',
+      description: "Un studio logiciel basé à Douala au service de clients partout en Afrique — construisant les outils dont les entreprises modernes ont réellement besoin.",
     },
   };
 
@@ -60,110 +55,84 @@ export default function Company() {
         <html lang={lang} />
         <title>{meta[lang].title}</title>
         <meta name="description" content={meta[lang].description} />
-        <meta property="og:title" content={meta[lang].title} />
-        <meta property="og:description" content={meta[lang].description} />
       </Helmet>
 
-      {/* Hero */}
-      <section className="section bg-gradient-hero">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-display text-display-1 text-text mb-6">
-              {t('company.title')}
-            </h1>
-            <p className="text-xl text-text-muted">
-              {t('company.subtitle')}
-            </p>
-          </div>
+      <section className="bg-canvas border-b border-line">
+        <div className="container-custom py-20 md:py-24">
+          <EyebrowTag tone="green">{t('company.page_eyebrow')}</EyebrowTag>
+          <h1
+            className="font-display font-medium text-ink mt-4 mb-5 max-w-4xl"
+            style={{ fontSize: 'clamp(48px, 7vw, 88px)', letterSpacing: '-0.035em', lineHeight: 0.96 }}
+          >
+            <Trans
+              i18nKey="company.page_heading_rich"
+              components={{
+                italic: <span className="italic" style={{ color: '#FF914D' }} />,
+                br: <br />,
+              }}
+            />
+          </h1>
+          <p className="text-[19px] text-muted max-w-2xl leading-relaxed">
+            {t('company.page_subtitle')}
+          </p>
         </div>
       </section>
 
-      {/* Mission & Story */}
-      <section className="section bg-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Mission */}
-            <div className="card bg-gradient-soft-1 border border-white/50">
-              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <h2 className="text-heading-2 text-text mb-4">
-                {t('company.mission_title')}
-              </h2>
-              <p className="text-body text-text-muted leading-relaxed">
-                {t('company.mission_text')}
-              </p>
-            </div>
-
-            {/* Story */}
-            <div className="card bg-gradient-soft-2 border border-white/50">
-              <div className="w-14 h-14 bg-accent-yellow/10 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-7 h-7 text-accent-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h2 className="text-heading-2 text-text mb-4">
-                {t('company.story_title')}
-              </h2>
-              <p className="text-body text-text-muted leading-relaxed">
-                {t('company.story_text')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="section bg-background">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-heading-1 text-text">
-              {t('company.values_title')}
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value) => (
-              <div key={value.id} className="card card-hover text-center">
-                <div className="w-14 h-14 bg-gradient-cta rounded-2xl flex items-center justify-center mx-auto mb-5">
-                  <span className="text-white">{value.icon}</span>
+      <section className="bg-white border-t border-line">
+        <div className="container-custom py-16 md:py-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            {metrics.map((m) => (
+              <div key={m.v}>
+                <div
+                  className="font-display font-medium"
+                  style={{
+                    fontSize: 'clamp(40px, 7vw, 64px)',
+                    color: m.c,
+                    letterSpacing: '-0.03em',
+                    lineHeight: 1,
+                  }}
+                >
+                  {m.k}
                 </div>
-                <h3 className="text-heading-3 text-text mb-2">
-                  {t(`company.${value.id}.title`)}
-                </h3>
-                <p className="text-body text-text-muted">
-                  {t(`company.${value.id}.description`)}
-                </p>
+                <div className="text-[13px] md:text-[14px] text-muted mt-2">{t(`company.${m.v}`)}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why BridgeYou */}
-      <section className="section bg-white">
+      <section className="section-y bg-white border-t border-line">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-heading-1 text-text text-center mb-12">
-              {t('company.why_title')}
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {whyUs.map((item) => (
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-14 items-start">
+            <div>
+              <EyebrowTag tone="green">{t('company.registered_eyebrow')}</EyebrowTag>
+              <h2
+                className="font-display font-medium text-ink mt-4 mb-5"
+                style={{ fontSize: 'clamp(32px, 4.5vw, 44px)', letterSpacing: '-0.03em', lineHeight: 1.05 }}
+              >
+                {t('company.registered_title')}
+              </h2>
+              <p className="text-[16px] text-muted leading-relaxed max-w-lg">
+                {t('company.registered_intro')}
+              </p>
+            </div>
+            <div
+              className="bg-canvas p-6 sm:p-7"
+              style={{ border: '1px solid #EAECF0', borderRadius: 20 }}
+            >
+              {[
+                { l: 'registered_name_label', v: 'registered_name_value' },
+                { l: 'registered_rccm_label', v: 'registered_rccm_value' },
+                { l: 'registered_date_label', v: 'registered_date_value' },
+                { l: 'registered_activity_label', v: 'registered_activity_value' },
+              ].map((row, idx) => (
                 <div
-                  key={item}
-                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-2xl"
+                  key={row.l}
+                  className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6 py-3.5"
+                  style={{ borderTop: idx === 0 ? 'none' : '1px solid #EAECF0' }}
                 >
-                  <div className="w-10 h-10 bg-accent-green/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-body font-medium text-text">
-                    {t(`company.${item}`)}
-                  </span>
+                  <div className="mono-caption">{t(`company.${row.l}`)}</div>
+                  <div className="text-[14px] text-ink font-medium sm:text-right">{t(`company.${row.v}`)}</div>
                 </div>
               ))}
             </div>
@@ -171,31 +140,126 @@ export default function Company() {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="section bg-background">
+      <section className="section-y bg-canvas border-t border-line">
         <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-heading-1 text-text">
-              {t('company.leader_title')}
+          <div className="grid md:grid-cols-2 gap-8 items-start mb-10">
+            <div>
+              <EyebrowTag tone="orange">{t('company.mission_eyebrow')}</EyebrowTag>
+              <h2
+                className="font-display font-medium text-ink mt-4"
+                style={{ fontSize: 'clamp(32px, 4.5vw, 48px)', letterSpacing: '-0.03em', lineHeight: 1.02 }}
+              >
+                {t('company.mission_title')}
+              </h2>
+            </div>
+            <p className="text-[17px] leading-relaxed text-muted">
+              {t('company.mission_text')}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-5">
+            {values.map((v) => (
+              <div
+                key={v.id}
+                className="bg-white p-7"
+                style={{ border: '1px solid #EAECF0', borderRadius: 20 }}
+              >
+                <div
+                  className="flex items-center justify-center mb-5"
+                  style={{
+                    width: 44, height: 44, borderRadius: 11,
+                    background: `${v.accent}14`, color: v.accent, border: `1px solid ${v.accent}30`,
+                  }}
+                >
+                  <Icon name={v.icon} size={22} sw={1.6} />
+                </div>
+                <div
+                  className="font-display font-medium text-ink mb-2"
+                  style={{ fontSize: 20, letterSpacing: '-0.01em' }}
+                >
+                  {t(`company.${v.id}.title`)}
+                </div>
+                <p className="text-[14px] text-muted leading-relaxed">
+                  {t(`company.${v.id}.description`)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-y bg-white border-t border-line">
+        <div className="container-custom">
+          <div className="max-w-3xl mb-10">
+            <EyebrowTag tone="ink">{t('company.why_eyebrow')}</EyebrowTag>
+            <h2
+              className="font-display font-medium text-ink mt-4"
+              style={{ fontSize: 'clamp(32px, 4.5vw, 44px)', letterSpacing: '-0.03em', lineHeight: 1.05 }}
+            >
+              {t('company.why_title')}
             </h2>
           </div>
-
-          <div className="max-w-md mx-auto">
-            <div className="card card-hover text-center">
-              {/* Avatar placeholder */}
-              <div className="w-24 h-24 bg-gradient-cta rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+          <div className="grid md:grid-cols-2 gap-3">
+            {whyItems.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 py-4 px-5"
+                style={{ background: '#F6F8FB', borderRadius: 14, border: '1px solid #EAECF0' }}
+              >
+                <div
+                  className="flex items-center justify-center flex-shrink-0"
+                  style={{ width: 32, height: 32, borderRadius: 8, background: 'rgba(126,217,87,0.14)', color: '#4A9A2F' }}
+                >
+                  <Icon name="check" size={16} sw={2.2} />
+                </div>
+                <span className="text-[15px] font-medium text-ink">{t(`company.${item}`)}</span>
               </div>
-              <h3 className="text-heading-2 text-text mb-1">
-                {t('company.leader_name')}
-              </h3>
-              <p className="text-body text-text-muted mb-4">
-                BridgeYou
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-y bg-canvas border-t border-line">
+        <div className="container-custom">
+          <EyebrowTag tone="orange">{t('company.leader_eyebrow')}</EyebrowTag>
+          <h2
+            className="font-display font-medium text-ink mt-4 mb-8"
+            style={{ fontSize: 'clamp(32px, 4.5vw, 44px)', letterSpacing: '-0.03em' }}
+          >
+            {t('company.leader_title')}
+          </h2>
+          <div className="grid md:grid-cols-[360px_1fr] gap-8 lg:gap-12 items-start max-w-4xl">
+            <div
+              className="bg-white overflow-hidden"
+              style={{ border: '1px solid #EAECF0', borderRadius: 20 }}
+            >
+              <img
+                src={nfonJosephPhoto}
+                alt={t('company.founder.name')}
+                className="block w-full object-cover"
+                style={{ aspectRatio: '1 / 1' }}
+              />
+              <div className="p-5">
+                <div
+                  className="font-display font-medium text-ink"
+                  style={{ fontSize: 22, letterSpacing: '-0.01em' }}
+                >
+                  {t('company.founder.name')}
+                </div>
+                <div className="text-[13px] text-muted mt-1">
+                  {t('company.founder.role')}
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="mono-caption mb-3">{t('company.founder.credentials_label')}</div>
+              <p
+                className="font-display font-medium text-ink mb-6"
+                style={{ fontSize: 'clamp(24px, 3vw, 32px)', letterSpacing: '-0.02em', lineHeight: 1.2 }}
+              >
+                {t('company.founder.credentials')}
               </p>
-              <p className="text-body-sm text-text-muted">
-                {t('company.leader_bio')}
+              <p className="text-[16px] text-muted leading-relaxed">
+                {t('company.founder.bio')}
               </p>
             </div>
           </div>
@@ -206,4 +270,3 @@ export default function Company() {
     </>
   );
 }
-

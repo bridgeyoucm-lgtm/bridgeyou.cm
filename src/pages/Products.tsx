@@ -1,69 +1,26 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import CTA from '../components/CTA';
+import EyebrowTag from '../components/EyebrowTag';
+import Icon, { type IconName } from '../components/Icon';
 
-const products = [
-  {
-    id: 'product_1',
-    color: 'primary',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    ),
-    available: true,
-  },
-  {
-    id: 'product_2',
-    color: 'accent-green',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    ),
-    available: true,
-  },
-  {
-    id: 'product_3',
-    color: 'accent-yellow',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
-    available: true,
-  },
-  {
-    id: 'product_4',
-    color: 'accent-red',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
-    available: false,
-  },
-  {
-    id: 'product_5',
-    color: 'primary',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
-    available: false,
-  },
-  {
-    id: 'product_6',
-    color: 'accent-green',
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-    ),
-    available: false,
-  },
+type Accent = '#FF914D' | '#7ED957' | '#FFBD59';
+
+interface ProductEntry {
+  id: string;
+  icon: IconName;
+  accent: Accent;
+  status: 'live' | 'coming';
+}
+
+const products: ProductEntry[] = [
+  { id: 'bridgebook', icon: 'book', accent: '#FF914D', status: 'live' },
+  { id: 'bridgeshop', icon: 'shop', accent: '#FFBD59', status: 'live' },
+  { id: 'bridgecrm', icon: 'crm', accent: '#7ED957', status: 'live' },
+  { id: 'bridgeflow', icon: 'flow', accent: '#FF914D', status: 'coming' },
+  { id: 'bridgeforms', icon: 'form', accent: '#7ED957', status: 'live' },
+  { id: 'bridgechat', icon: 'chat', accent: '#FFBD59', status: 'coming' },
 ];
 
 export default function Products() {
@@ -72,20 +29,13 @@ export default function Products() {
 
   const meta = {
     en: {
-      title: 'Products - BridgeYou',
-      description: 'Ready-to-deploy software products for African businesses. Booking systems, e-commerce, CRM, and more.',
+      title: 'Products — BridgeYou',
+      description: 'A suite of business software built for how African teams actually run — bookings, CRM, e-commerce, automations.',
     },
     fr: {
-      title: 'Produits - BridgeYou',
-      description: 'Produits logiciels prêts à déployer pour les entreprises africaines. Systèmes de réservation, e-commerce, CRM et plus.',
+      title: 'Produits — BridgeYou',
+      description: 'Une suite logicielle conçue pour la façon dont les équipes africaines travaillent — réservation, CRM, e-commerce, automatisations.',
     },
-  };
-
-  const colorClasses: Record<string, { bg: string; text: string; gradient: string }> = {
-    'primary': { bg: 'bg-primary/10', text: 'text-primary', gradient: 'from-primary/10 to-accent-yellow/5' },
-    'accent-green': { bg: 'bg-accent-green/10', text: 'text-accent-green', gradient: 'from-accent-green/10 to-primary/5' },
-    'accent-yellow': { bg: 'bg-accent-yellow/10', text: 'text-accent-yellow', gradient: 'from-accent-yellow/10 to-accent-green/5' },
-    'accent-red': { bg: 'bg-accent-red/10', text: 'text-accent-red', gradient: 'from-accent-red/10 to-accent-yellow/5' },
   };
 
   return (
@@ -94,80 +44,97 @@ export default function Products() {
         <html lang={lang} />
         <title>{meta[lang].title}</title>
         <meta name="description" content={meta[lang].description} />
-        <meta property="og:title" content={meta[lang].title} />
-        <meta property="og:description" content={meta[lang].description} />
       </Helmet>
 
-      {/* Hero */}
-      <section className="section bg-gradient-hero">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-display text-display-1 text-text mb-6">
-              {t('products.title')}
-            </h1>
-            <p className="text-xl text-text-muted">
-              {t('products.subtitle')}
-            </p>
-          </div>
+      <section className="bg-canvas border-b border-line">
+        <div className="container-custom py-20 md:py-24">
+          <EyebrowTag tone="orange">{t('products.page_eyebrow')}</EyebrowTag>
+          <h1
+            className="font-display font-medium text-ink mt-4 mb-5 max-w-4xl"
+            style={{ fontSize: 'clamp(48px, 7vw, 88px)', letterSpacing: '-0.035em', lineHeight: 0.96 }}
+          >
+            <Trans
+              i18nKey="products.page_heading_rich"
+              components={{
+                italic: <span className="italic" style={{ color: '#FF914D' }} />,
+                br: <br />,
+              }}
+            />
+          </h1>
+          <p className="text-[19px] text-muted max-w-2xl leading-relaxed">
+            {t('products.page_subtitle')}
+          </p>
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="section bg-background">
+      <section className="section-y bg-canvas">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product) => {
-              const colors = colorClasses[product.color];
-              const features = t(`products.${product.id}.features`, { returnObjects: true }) as string[];
-
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {products.map((p) => {
+              const features = (t(`products.items.${p.id}.features`, { returnObjects: true }) as string[]) || [];
+              const isLive = p.status === 'live';
               return (
                 <div
-                  key={product.id}
-                  className={`card card-hover bg-gradient-to-br ${colors.gradient} border border-white/50 flex flex-col`}
+                  key={p.id}
+                  id={p.id}
+                  className="relative overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1"
+                  style={{ background: '#FFFFFF', border: '1px solid #EAECF0', borderRadius: 20, padding: 28 }}
                 >
-                  {/* Header */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className={`w-14 h-14 ${colors.bg} rounded-2xl flex items-center justify-center ${colors.text}`}>
-                      {product.icon}
+                  <div
+                    className="absolute top-0 right-0 pointer-events-none"
+                    style={{
+                      width: 180, height: 180,
+                      background: `radial-gradient(circle at top right, ${p.accent}18, transparent 70%)`,
+                    }}
+                  />
+                  <div className="flex items-start justify-between mb-5 relative">
+                    <div
+                      className="flex items-center justify-center"
+                      style={{ width: 48, height: 48, borderRadius: 12, background: '#101828', color: p.accent }}
+                    >
+                      <Icon name={p.icon} size={24} sw={1.6} />
                     </div>
-                    {!product.available && (
-                      <span className="px-3 py-1 bg-gray-100 text-text-muted text-body-sm font-medium rounded-full">
-                        {t('products.coming_soon')}
-                      </span>
-                    )}
+                    <div
+                      className="font-semibold"
+                      style={{
+                        padding: '3px 9px', borderRadius: 999,
+                        background: isLive ? 'rgba(126,217,87,0.10)' : 'rgba(255,189,89,0.14)',
+                        color: isLive ? '#2E7D32' : '#A86C00',
+                        border: `1px solid ${isLive ? 'rgba(126,217,87,0.20)' : 'rgba(255,189,89,0.20)'}`,
+                        fontSize: 11, letterSpacing: '0.02em',
+                      }}
+                    >
+                      {isLive ? t('products.badge_live') : t('products.badge_coming')}
+                    </div>
                   </div>
-
-                  {/* Content */}
-                  <h3 className="text-heading-2 text-text mb-2">
-                    {t(`products.${product.id}.title`)}
-                  </h3>
-                  <p className="text-body text-text-muted mb-6">
-                    {t(`products.${product.id}.summary`)}
+                  <div
+                    className="font-display font-medium text-ink"
+                    style={{ fontSize: 30, letterSpacing: '-0.02em' }}
+                  >
+                    {t(`products.items.${p.id}.name`)}
+                  </div>
+                  <div className="text-[13px] font-medium mt-1" style={{ color: p.accent }}>
+                    {t(`products.items.${p.id}.tagline`)}
+                  </div>
+                  <p className="text-[14px] text-muted leading-relaxed mt-3">
+                    {t(`products.items.${p.id}.desc`)}
                   </p>
-
-                  {/* Features */}
-                  <div className="mb-6 flex-1">
-                    <div className="text-body-sm font-semibold text-text mb-3">
-                      {t('products.features')}:
-                    </div>
-                    <ul className="space-y-2">
-                      {features.map((feature, index) => (
-                        <li key={index} className="flex items-center gap-2 text-body-sm text-text-muted">
-                          <svg className={`w-4 h-4 ${colors.text}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                          </svg>
-                          {feature}
+                  {features.length > 0 && (
+                    <ul className="mt-5 space-y-2">
+                      {features.map((f) => (
+                        <li key={f} className="flex items-center gap-2 text-[13px] text-ink-2">
+                          <Icon name="check" size={14} stroke={p.accent} sw={2.2} />
+                          {f}
                         </li>
                       ))}
                     </ul>
-                  </div>
-
-                  {/* CTA */}
+                  )}
                   <Link
                     to="/contact"
-                    className={`btn-primary w-full ${!product.available ? 'opacity-50 pointer-events-none' : ''}`}
+                    className={`btn-ink mt-6 w-full justify-center ${!isLive ? 'opacity-60' : ''}`}
                   >
-                    {t('products.get_started')}
+                    {isLive ? t('products.get_started') : t('products.join_waitlist')}
+                    <Icon name="arrow" size={14} />
                   </Link>
                 </div>
               );
@@ -180,4 +147,3 @@ export default function Products() {
     </>
   );
 }
-

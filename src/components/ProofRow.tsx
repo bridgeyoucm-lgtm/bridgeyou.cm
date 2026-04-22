@@ -1,36 +1,46 @@
 import { useTranslation } from 'react-i18next';
 
-export default function ProofRow() {
-  const { t } = useTranslation();
+type LogoStyle = 'serif' | 'caps' | 'serif-italic' | 'lower';
 
-  const chips = [
-    { key: 'chip_websites', icon: '🌐' },
-    { key: 'chip_automation', icon: '⚡' },
-    { key: 'chip_crm', icon: '📊' },
-    { key: 'chip_ecommerce', icon: '🛒' },
-  ];
-
-  return (
-    <section className="py-12 bg-white border-y border-border">
-      <div className="container-custom">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-          <p className="text-body text-text-muted font-medium">
-            {t('proof.title')}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {chips.map((chip) => (
-              <div
-                key={chip.key}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-50 rounded-full text-body-sm font-medium text-text"
-              >
-                <span>{chip.icon}</span>
-                {t(`proof.${chip.key}`)}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+interface LogoItem {
+  name: string;
+  style: LogoStyle;
 }
 
+const logos: LogoItem[] = [
+  { name: 'Clinique Aurore', style: 'serif' },
+  { name: 'MARCHÉ MOKOLO', style: 'caps' },
+  { name: 'Bonanjo Résidences', style: 'serif-italic' },
+  { name: 'BAOBAB TECH', style: 'caps' },
+  { name: 'kola.', style: 'lower' },
+  { name: 'Ndolè Coffee Co.', style: 'serif' },
+];
+
+export default function ProofRow() {
+  const { t } = useTranslation();
+  return (
+    <div className="bg-white border-b border-line">
+      <div className="container-custom py-12 md:py-14">
+        <div className="mono-caption text-center mb-7">{t('proof.title')}</div>
+        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
+          {logos.map((logo) => (
+            <div
+              key={logo.name}
+              className="text-muted"
+              style={{
+                fontFamily: logo.style.includes('serif') ? 'Fraunces, serif' : 'Inter, sans-serif',
+                fontStyle: logo.style === 'serif-italic' ? 'italic' : 'normal',
+                fontSize: logo.style === 'caps' ? 13 : 19,
+                fontWeight: logo.style === 'caps' ? 700 : 500,
+                letterSpacing: logo.style === 'caps' ? '0.14em' : '-0.01em',
+                opacity: 0.7,
+              }}
+            >
+              {logo.name}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

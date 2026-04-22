@@ -1,115 +1,135 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import EyebrowTag from './EyebrowTag';
+import Icon, { type IconName } from './Icon';
 
-const services = [
-  {
-    key: 'websites',
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-      </svg>
-    ),
-    gradient: 'from-primary/10 to-accent-yellow/10',
-    iconBg: 'bg-primary/10',
-    iconColor: 'text-primary',
-  },
-  {
-    key: 'booking',
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    ),
-    gradient: 'from-accent-green/10 to-primary/10',
-    iconBg: 'bg-accent-green/10',
-    iconColor: 'text-accent-green',
-  },
-  {
-    key: 'crm',
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    ),
-    gradient: 'from-accent-yellow/10 to-accent-green/10',
-    iconBg: 'bg-accent-yellow/10',
-    iconColor: 'text-accent-yellow',
-  },
-  {
-    key: 'ecommerce',
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    ),
-    gradient: 'from-accent-red/10 to-accent-yellow/10',
-    iconBg: 'bg-accent-red/10',
-    iconColor: 'text-accent-red',
-  },
-  {
-    key: 'automations',
-    icon: (
-      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
-    gradient: 'from-primary/10 to-accent-green/10',
-    iconBg: 'bg-primary/10',
-    iconColor: 'text-primary',
-  },
+type Accent = '#FF914D' | '#7ED957' | '#FFBD59';
+
+interface ServiceItem {
+  icon: IconName;
+  key: string;
+  accent: Accent;
+  featured?: boolean;
+}
+
+const services: ServiceItem[] = [
+  { icon: 'globe', key: 'websites', accent: '#FF914D' },
+  { icon: 'calendar', key: 'booking', accent: '#FF914D', featured: true },
+  { icon: 'crm', key: 'crm', accent: '#7ED957' },
+  { icon: 'cart', key: 'ecommerce', accent: '#FFBD59' },
+  { icon: 'flow', key: 'automations', accent: '#FF914D' },
+  { icon: 'zap', key: 'ads', accent: '#7ED957' },
 ];
+
+function ServiceCard({ item }: { item: ServiceItem }) {
+  const { t } = useTranslation();
+  const { featured, accent } = item;
+  const features = (t(`solutions.${item.key}.features`, { returnObjects: true }) as string[]) || [];
+  const bg = featured ? '#101828' : '#FFFFFF';
+  const shadow = featured ? '0 24px 60px rgba(16,24,40,0.2)' : '0 1px 2px rgba(16,24,40,0.04)';
+  return (
+    <div
+      className="rounded-2xl flex flex-col min-h-[280px] transition-all duration-300 hover:-translate-y-1"
+      style={{
+        background: bg,
+        color: featured ? '#E6EAF2' : '#101828',
+        padding: 28,
+        border: featured ? 'none' : '1px solid #EAECF0',
+        boxShadow: shadow,
+      }}
+    >
+      <div
+        className="flex items-center justify-center"
+        style={{
+          width: 44, height: 44, borderRadius: 11,
+          background: featured ? 'rgba(255,145,77,0.18)' : `${accent}14`,
+          color: accent,
+          border: `1px solid ${accent}30`,
+          marginBottom: 18,
+        }}
+      >
+        <Icon name={item.icon} size={22} sw={1.6} />
+      </div>
+      <div
+        className="font-display font-medium"
+        style={{
+          fontSize: 22, letterSpacing: '-0.02em', marginBottom: 8,
+          color: featured ? '#FFFFFF' : '#101828',
+        }}
+      >
+        {t(`solutions.${item.key}.title`)}
+      </div>
+      <div
+        className="leading-relaxed mb-4"
+        style={{ fontSize: 14, color: featured ? '#8A94A6' : '#667085' }}
+      >
+        {t(`solutions.${item.key}.description`)}
+      </div>
+      {features.length > 0 && (
+        <div className="mt-auto flex flex-col gap-1.5">
+          {features.map((f) => (
+            <div
+              key={f}
+              className="flex items-center gap-2"
+              style={{ fontSize: 12.5, color: featured ? '#8A94A6' : '#1D2939' }}
+            >
+              <Icon name="check" size={13} stroke={accent} sw={2.2} />
+              {f}
+            </div>
+          ))}
+        </div>
+      )}
+      <div
+        className="mt-5 pt-3.5 flex items-center justify-between text-[13px] font-medium"
+        style={{
+          borderTop: `1px solid ${featured ? 'rgba(255,255,255,0.08)' : '#F2F4F7'}`,
+          color: featured ? accent : '#101828',
+        }}
+      >
+        {t('solutions.learn_more')}
+        <Icon name="arrow" size={14} sw={2} />
+      </div>
+    </div>
+  );
+}
 
 export default function ServiceCards() {
   const { t } = useTranslation();
-
+  const top = services.slice(0, 3);
+  const bottom = services.slice(3);
   return (
-    <section className="section bg-background">
+    <section className="section-y bg-canvas">
       <div className="container-custom">
-        {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-display text-heading-1 text-text mb-4">
-            {t('solutions.title')}
-          </h2>
-          <p className="text-lg text-text-muted max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-[1fr_1.2fr] gap-8 items-end mb-12">
+          <div>
+            <EyebrowTag tone="green">{t('solutions.eyebrow')}</EyebrowTag>
+            <h2
+              className="font-display font-medium text-ink mt-4"
+              style={{ fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '-0.03em', lineHeight: 1.02 }}
+            >
+              <Trans
+                i18nKey="solutions.heading_rich"
+                components={{
+                  italic: <span className="italic text-muted" style={{ fontWeight: 500 }} />,
+                  br: <br />,
+                }}
+              />
+            </h2>
+          </div>
+          <p className="text-[16px] leading-relaxed text-muted max-w-lg md:justify-self-end">
             {t('solutions.subtitle')}
           </p>
         </div>
-
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service) => (
-            <div
-              key={service.key}
-              className={`card card-hover bg-gradient-to-br ${service.gradient} border border-white/50`}
-            >
-              {/* Icon */}
-              <div className={`w-14 h-14 ${service.iconBg} rounded-2xl flex items-center justify-center mb-5`}>
-                <span className={service.iconColor}>{service.icon}</span>
-              </div>
-
-              {/* Content */}
-              <h3 className="text-heading-3 text-text mb-3">
-                {t(`solutions.${service.key}.title`)}
-              </h3>
-              <p className="text-body text-text-muted mb-5 leading-relaxed">
-                {t(`solutions.${service.key}.description`)}
-              </p>
-
-              {/* CTA */}
-              <Link
-                to={`/solutions#${service.key}`}
-                className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-              >
-                {t('solutions.cta')}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
+        <div className="grid md:grid-cols-3 gap-5 mb-5">
+          {top.map((s) => (
+            <ServiceCard key={s.key} item={s} />
+          ))}
+        </div>
+        <div className="grid md:grid-cols-3 gap-5">
+          {bottom.map((s) => (
+            <ServiceCard key={s.key} item={s} />
           ))}
         </div>
       </div>
     </section>
   );
 }
-

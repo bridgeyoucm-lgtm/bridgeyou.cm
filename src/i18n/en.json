@@ -3,190 +3,250 @@
     "solutions": "Solutions",
     "products": "Products",
     "company": "Company",
-    "contact": "Contact"
+    "contact": "Contact",
+    "book_consult": "Book a consult"
   },
   "hero": {
+    "eyebrow": "Software studio · Douala · Cameroon",
     "headline": "Build Software. Grow Faster.",
-    "subheadline": "We build business software and growth systems that help modern businesses automate work and get customers.",
+    "headline_rich": "Build software.<br/><br/>Grow <italic>faster.</italic>",
+    "subheadline": "We build the websites, systems and automations that power modern African businesses — from clinics and retailers to real estate and services.",
     "cta_primary": "Book a free consult",
     "cta_whatsapp": "Chat on WhatsApp",
-    "mini_card_automation": "Smart Automations",
-    "mini_card_growth": "Growth Systems",
-    "mini_card_support": "24/7 Support"
+    "note": "We reply within 24 hours · Mobile Money + Cards accepted",
+    "metric_label": "Bookings · 30d"
   },
   "proof": {
-    "title": "Trusted by growing businesses",
-    "chip_websites": "Custom Websites",
-    "chip_automation": "Automations",
-    "chip_crm": "CRM Systems",
-    "chip_ecommerce": "E-commerce"
+    "title": "Trusted by teams building across Cameroon & beyond"
   },
   "solutions": {
-    "title": "Solutions We Build",
-    "subtitle": "From websites to complete business systems, we build what you need to grow.",
+    "eyebrow": "What we build",
+    "page_eyebrow": "Solutions",
+    "heading_rich": "Six services.<br/><italic>One partner.</italic>",
+    "page_heading_rich": "Six things.<br/><italic>Done properly.</italic>",
+    "subtitle": "We work with you end-to-end — strategy, design, build, ads and the ongoing growth work most studios walk away from. Pick one service or all six.",
+    "page_subtitle": "Everything we build serves one goal: helping you grow without tripping over your own tools.",
+    "learn_more": "Learn more",
+    "cta_consult": "Book a consult",
     "websites": {
-      "title": "Business Websites & Landing Pages",
-      "description": "Fast, beautiful, conversion-optimized websites that represent your brand and generate leads 24/7."
+      "title": "Websites & Landing Pages",
+      "description": "High-converting, fast-loading sites with local SEO and bilingual copy.",
+      "features": ["Editorial design", "EN / FR ready", "Under 1.5s load"],
+      "heading_rich": "Pages that <italic>actually convert.</italic>"
     },
     "booking": {
-      "title": "Booking & Appointment Systems",
-      "description": "Let clients book appointments online, sync with your calendar, and automate reminders."
+      "title": "Booking Systems",
+      "description": "Let clients book 24/7 — with SMS reminders and staff schedules that sync.",
+      "features": ["WhatsApp reminders", "Mobile Money", "Staff calendars"],
+      "heading_rich": "Fewer no-shows.<br/>More <italic>full calendars.</italic>"
     },
     "crm": {
-      "title": "CRM & Client Follow-up Systems",
-      "description": "Never lose a lead. Track every customer interaction and automate your follow-up process."
+      "title": "CRM & Sales",
+      "description": "Track leads, deals and follow-ups without the spreadsheet chaos.",
+      "features": ["Visual pipelines", "WhatsApp inbox", "Import anything"],
+      "heading_rich": "Leads that <italic>never fall through.</italic>"
     },
     "ecommerce": {
-      "title": "E-commerce & Order Management",
-      "description": "Sell online with custom storefronts, inventory management, and payment processing."
+      "title": "E-commerce",
+      "description": "Storefronts tuned for Mobile Money, local delivery and real inventory.",
+      "features": ["MoMo / Orange", "Delivery routing", "Multi-currency"],
+      "heading_rich": "Storefronts built <italic>Mobile-Money first.</italic>"
     },
     "automations": {
-      "title": "Automations & Integrations",
-      "description": "Connect WhatsApp, email, payments, and more. Automate repetitive tasks and save hours every week."
+      "title": "Automations",
+      "description": "Connect the tools you use — from WhatsApp to Sheets to accounting.",
+      "features": ["Triggers & actions", "API integrations", "Monitoring"],
+      "heading_rich": "Your stack, <italic>finally talking.</italic>"
     },
-    "cta": "Learn more"
+    "ads": {
+      "title": "Google & Facebook Ads",
+      "description": "We run and manage paid ads on Google and Meta — keywords, creatives, retargeting, weekly reports you can actually read.",
+      "features": ["Google Ads", "Meta (FB + Instagram)", "Weekly reporting"],
+      "heading_rich": "Ads that <italic>bring paying customers.</italic>"
+    }
   },
   "products": {
-    "title": "Our Products",
-    "subtitle": "Ready-to-deploy solutions built for African businesses.",
+    "eyebrow": "Our product suite",
+    "page_eyebrow": "Products",
+    "heading_rich": "Six products,<br/>built <italic>for how you actually run.</italic>",
+    "page_heading_rich": "A suite designed<br/>to <italic>work together.</italic>",
+    "page_subtitle": "Ready-to-deploy products for teams that need to move fast — each one standalone, all of them better together.",
     "view_all": "View all products",
-    "coming_soon": "Coming Soon",
-    "features": "Features",
-    "get_started": "Get Started",
-    "product_1": {
-      "title": "BridgeBook",
-      "summary": "Smart appointment booking system for service businesses.",
-      "features": ["Online booking page", "Calendar sync", "SMS/WhatsApp reminders", "Client management"]
-    },
-    "product_2": {
-      "title": "BridgeShop",
-      "summary": "Complete e-commerce solution with local payment integrations.",
-      "features": ["Product catalog", "Mobile Money payments", "Order tracking", "Inventory management"]
-    },
-    "product_3": {
-      "title": "BridgeCRM",
-      "summary": "Simple CRM designed for small teams who want to grow.",
-      "features": ["Lead tracking", "Pipeline management", "Email integration", "Automated follow-ups"]
-    },
-    "product_4": {
-      "title": "BridgeFlow",
-      "summary": "Workflow automation for repetitive business tasks.",
-      "features": ["Visual workflow builder", "WhatsApp automation", "Email sequences", "API integrations"]
-    },
-    "product_5": {
-      "title": "BridgeForms",
-      "summary": "Smart forms that capture leads and automate responses.",
-      "features": ["Drag-and-drop builder", "Conditional logic", "Auto-responders", "Analytics dashboard"]
-    },
-    "product_6": {
-      "title": "BridgeChat",
-      "summary": "Unified inbox for all your customer conversations.",
-      "features": ["Multi-channel inbox", "Team collaboration", "Canned responses", "Chatbot builder"]
+    "explore": "Explore",
+    "get_started": "Get started",
+    "join_waitlist": "Join waitlist",
+    "badge_live": "● Available",
+    "badge_coming": "◌ Coming soon",
+    "items": {
+      "bridgebook": {
+        "name": "BridgeBook",
+        "tagline": "Bookings & calendars",
+        "desc": "Let clients self-book. Staff schedules sync automatically. SMS and WhatsApp reminders built in.",
+        "features": ["Online booking page", "Calendar sync", "SMS / WhatsApp reminders", "Client management"]
+      },
+      "bridgeshop": {
+        "name": "BridgeShop",
+        "tagline": "E-commerce",
+        "desc": "Storefronts with Mobile Money-first checkout, local delivery routing and real inventory.",
+        "features": ["Product catalog", "Mobile Money", "Order tracking", "Inventory"]
+      },
+      "bridgecrm": {
+        "name": "BridgeCRM",
+        "tagline": "Sales pipelines",
+        "desc": "Track leads and deals visually. WhatsApp and email in one inbox.",
+        "features": ["Visual pipeline", "WhatsApp inbox", "Automated follow-ups", "Reporting"]
+      },
+      "bridgeflow": {
+        "name": "BridgeFlow",
+        "tagline": "Automations",
+        "desc": "Connect your tools together with triggers, actions and API integrations.",
+        "features": ["Visual builder", "WhatsApp automation", "Email sequences", "API connectors"]
+      },
+      "bridgeforms": {
+        "name": "BridgeForms",
+        "tagline": "Smart forms & intake",
+        "desc": "Branded forms with conditional logic, auto-responders and an analytics dashboard.",
+        "features": ["Drag & drop", "Conditional logic", "Auto-responders", "Analytics"]
+      },
+      "bridgechat": {
+        "name": "BridgeChat",
+        "tagline": "Unified inbox",
+        "desc": "WhatsApp, email and web chat in one place. Shared with your team.",
+        "features": ["Multi-channel", "Team collaboration", "Canned responses", "Chatbot builder"]
+      }
     }
   },
   "featured": {
-    "title": "Featured Projects",
-    "subtitle": "Real solutions we've built for real businesses.",
-    "view_case": "View case study",
+    "eyebrow": "Selected work",
+    "heading_rich": "Results, not <italic>rhetoric.</italic>",
+    "read_case": "Read case",
     "case_1": {
-      "title": "E-commerce Platform",
-      "client": "Fashion Retailer",
-      "description": "Custom online store with Mobile Money integration and inventory management."
+      "tag": "Healthcare · Douala",
+      "metric": "3× appointments",
+      "quote": "We replaced a paper logbook with BridgeBook in a weekend. Our reception team got their afternoons back.",
+      "client": "Clinique Aurore"
     },
     "case_2": {
-      "title": "Booking System",
-      "client": "Medical Clinic",
-      "description": "Patient appointment system with SMS reminders and doctor scheduling."
+      "tag": "Retail · Douala",
+      "metric": "+214% revenue",
+      "quote": "Finally a checkout that speaks Mobile Money first. Our repeat customers doubled in two months.",
+      "client": "Marché Mokolo"
     },
     "case_3": {
-      "title": "CRM Solution",
-      "client": "Real Estate Agency",
-      "description": "Lead management system with automated follow-ups and property matching."
+      "tag": "Real estate · Bonanjo",
+      "metric": "-60% response time",
+      "quote": "Leads no longer fall through WhatsApp. The team picks up a ringing pipeline every morning.",
+      "client": "Résidence Bonanjo"
     }
   },
   "process": {
-    "title": "How We Work",
-    "subtitle": "A simple, proven process to bring your project to life.",
+    "eyebrow": "How we work",
+    "heading_rich": "Four steps.<br/><italic>Zero handoffs.</italic>",
+    "subtitle": "One team from the first call to the quarterly review — no agency-to-freelancer shuffle.",
     "step_1": {
-      "title": "Discovery",
-      "description": "We learn about your business, goals, and challenges in a free consultation."
+      "title": "Discover",
+      "description": "Workshop your goals, users and constraints. Audit what you already run."
     },
     "step_2": {
-      "title": "Strategy",
-      "description": "We design a solution tailored to your needs with clear timelines and pricing."
+      "title": "Design",
+      "description": "High-fidelity prototypes you can click before a line of code is written."
     },
     "step_3": {
       "title": "Build",
-      "description": "Our team builds your solution with regular updates and feedback loops."
+      "description": "Ship in fortnightly slices. Real product you can use — not milestones on a chart."
     },
     "step_4": {
-      "title": "Launch & Support",
-      "description": "We launch your project and provide ongoing support to ensure success."
+      "title": "Grow",
+      "description": "Iterate on real usage. Monthly metrics review. We stick around past launch."
     }
   },
   "testimonials": {
-    "title": "What Our Clients Say",
-    "subtitle": "Real feedback from businesses we've helped grow.",
+    "eyebrow": "Kind words",
+    "heading_rich": "Operators, founders<br/>and <italic>real customers.</italic>",
     "testimonial_1": {
-      "quote": "BridgeYou transformed our booking process. We now get 3x more appointments and never miss a follow-up.",
-      "author": "Marie K.",
-      "role": "Clinic Manager",
-      "company": "HealthFirst Clinic"
+      "quote": "BridgeYou didn't just ship our site — they rebuilt how we intake patients. Our no-shows dropped by half.",
+      "author": "Dr. Estelle Mbarga",
+      "role": "Founder",
+      "company": "Clinique Aurore"
     },
     "testimonial_2": {
-      "quote": "The CRM they built for us is exactly what we needed. Simple to use but powerful enough to grow with us.",
-      "author": "Jean-Paul M.",
-      "role": "Sales Director",
-      "company": "Immo Cameroun"
+      "quote": "We went from three WhatsApp numbers and a Google Sheet to one place. The team stopped losing orders.",
+      "author": "Kwame Bassong",
+      "role": "Operations Lead",
+      "company": "Marché Mokolo"
     },
     "testimonial_3": {
-      "quote": "Our new website generates more leads in a month than our old one did in a year. Worth every franc.",
-      "author": "Sylvie N.",
-      "role": "Founder",
-      "company": "Style Boutique"
+      "quote": "They understand Cameroon — Mobile Money, bilingual customers, how we actually work. That's rare.",
+      "author": "Aïcha Tchoua",
+      "role": "MD",
+      "company": "Bonanjo Résidences"
     }
   },
   "cta_banner": {
-    "title": "Ready to Build Something Great?",
-    "subtitle": "Let's discuss your project. Free consultation, no obligation.",
+    "heading_rich": "Ready to build<br/><italic>what's next?</italic>",
+    "subtitle": "30-minute call, no obligation. We'll walk through your goals, your stack, and what a pilot could look like.",
     "cta_primary": "Book a free consult",
-    "cta_whatsapp": "Chat on WhatsApp"
+    "cta_whatsapp": "WhatsApp us",
+    "reply_note": "Replies within <strong>24 hours</strong>",
+    "call": "Call us",
+    "email": "Email",
+    "visit": "Visit",
+    "address": "Carrefour Des Immuables Kotto, Douala"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Get answers to common questions about working with us.",
+    "eyebrow": "FAQ",
+    "heading_rich": "Good<br/><italic>questions.</italic>",
+    "ask": "Something else? <link>Ask on WhatsApp →</link>",
     "q1": {
-      "question": "How long does it take to build a website?",
-      "answer": "Most websites take 2-4 weeks depending on complexity. Simple landing pages can be done in 1 week, while complex web applications may take 2-3 months."
+      "question": "How long until we go live?",
+      "answer": "Most websites ship in 3–4 weeks. Booking systems and CRMs take 6–10 weeks depending on integrations. We break the work into fortnightly slices you can review and sign off."
     },
     "q2": {
-      "question": "What are your payment terms?",
-      "answer": "We typically require 50% upfront to start the project, with the remaining 50% due upon completion. For larger projects, we offer milestone-based payments."
+      "question": "Do you accept Mobile Money payments?",
+      "answer": "Yes. MTN MoMo, Orange Money and card payments all work out of the box. We also integrate with your bank if you need direct settlement."
     },
     "q3": {
-      "question": "Do you provide ongoing support?",
-      "answer": "Yes! We offer support packages starting from basic maintenance to full managed services. All projects include 30 days of free support after launch."
+      "question": "What happens after launch?",
+      "answer": "Every project includes 30 days of support and a handover doc. After that, you can stay on a monthly growth retainer or pay-as-you-go for updates."
     },
     "q4": {
-      "question": "Can you integrate with local payment systems?",
-      "answer": "Absolutely. We specialize in integrating local payment methods including Mobile Money (MTN, Orange), bank transfers, and international options like PayPal and Stripe."
+      "question": "Can you work in both English and French?",
+      "answer": "Yes — all of our sites, systems and support are fully bilingual. We write copy in both languages from day one."
     },
     "q5": {
-      "question": "Do you work with businesses outside Cameroon?",
-      "answer": "Yes, we work with businesses across Africa and internationally. Our team communicates in both English and French."
+      "question": "Do you build for industries outside Cameroon?",
+      "answer": "We work with teams across Africa and globally. Our base is in Cameroon but the stack, process and Mobile Money integrations transfer across the continent."
+    },
+    "q6": {
+      "question": "How do you price projects?",
+      "answer": "Fixed-price for scoped work, monthly retainer for ongoing growth. We walk you through a clear estimate after the first call — no surprises later."
     }
   },
   "company": {
-    "title": "About BridgeYou",
-    "subtitle": "We build software that helps businesses grow.",
-    "mission_title": "Our Mission",
-    "mission_text": "To empower businesses with modern software solutions that automate work, attract customers, and drive growth.",
-    "story_title": "Our Story",
-    "story_text": "BridgeYou was founded with a simple belief: every business deserves access to great software. We saw too many businesses struggling with outdated systems, manual processes, and missed opportunities. So we set out to build software that actually works for the way modern businesses operate.",
-    "values_title": "Our Values",
+    "page_eyebrow": "Our mission",
+    "page_heading_rich": "Build the software layer of<br/><italic>modern African business.</italic>",
+    "page_subtitle": "We're a Douala-based studio serving clients across Cameroon and beyond — building the tools we wish existed, tuned for how businesses on the continent actually operate.",
+    "metric_based": "Based in Cameroon",
+    "metric_coverage": "Serving across the continent",
+    "metric_reply": "Average reply time",
+    "metric_bilingual": "Fully bilingual",
+    "registered_eyebrow": "Registered & certified",
+    "registered_title": "A company you can verify.",
+    "registered_intro": "BridgeYou Innovations SARL is officially registered in Cameroon. We issue proper invoices, operate under a formal tax regime, and our incorporation documents are available on request.",
+    "registered_name_label": "Legal name",
+    "registered_name_value": "BridgeYou Innovations SARL",
+    "registered_rccm_label": "RCCM (Trade register)",
+    "registered_rccm_value": "CM-DLA-02-2025-B-13-00674",
+    "registered_date_label": "Incorporated",
+    "registered_date_value": "22 May 2025 · CFCE Douala",
+    "registered_activity_label": "Activity",
+    "registered_activity_value": "Web Development & Tech Consulting",
+    "mission_eyebrow": "Our values",
+    "mission_title": "What we stand for",
+    "mission_text": "We build software the way we'd want it built for us — simple, honest, and measured by real outcomes. We're partners, not vendors. And we're still here after launch.",
     "value_1": {
       "title": "Simplicity",
-      "description": "We build software that's easy to use, not just powerful."
+      "description": "Easy to use, not just powerful. Every click earns its place."
     },
     "value_2": {
       "title": "Results",
@@ -194,83 +254,96 @@
     },
     "value_3": {
       "title": "Partnership",
-      "description": "We're not vendors, we're partners invested in your growth."
+      "description": "We're not vendors — we're partners invested in your growth."
     },
     "value_4": {
-      "title": "Innovation",
-      "description": "We stay ahead of technology to bring you the best solutions."
+      "title": "Craft",
+      "description": "We care how it looks, feels, and performs — to the last pixel."
     },
-    "why_title": "Why Choose BridgeYou?",
+    "why_eyebrow": "Why choose us",
+    "why_title": "What you actually get",
     "why_1": "Local expertise with global standards",
     "why_2": "Bilingual team (English & French)",
     "why_3": "Specialized in African business needs",
     "why_4": "Transparent pricing, no surprises",
     "why_5": "Long-term partnership approach",
-    "leader_title": "Leadership",
-    "leader_name": "Founder & CEO",
-    "leader_bio": "Building software solutions that empower African businesses to grow and succeed in the digital economy."
+    "leader_eyebrow": "Founder",
+    "leader_title": "Meet the founder",
+    "founder": {
+      "name": "Nfon Joseph Azenui",
+      "role": "Founder",
+      "credentials_label": "Background",
+      "credentials": "Master's in Computer Engineering — NAHPI.",
+      "bio": "I founded BridgeYou to build the software African businesses actually need — websites, booking systems, CRMs and automations shaped around how teams here operate. From Douala, I partner directly with each client from the first call to launch and beyond."
+    }
   },
   "contact": {
-    "title": "Let's Talk",
-    "subtitle": "Ready to start your project? Get in touch and let's discuss how we can help.",
+    "eyebrow": "Contact",
+    "heading_rich": "Let's build<br/><italic>something good.</italic>",
+    "subtitle": "Fill the form or skip it and reach us directly — whatever works for you.",
+    "form_eyebrow": "Project inquiry",
+    "form_title": "Tell us about the work.",
+    "form_hint": "We reply within 24 hours — or skip the form and <strong>chat on WhatsApp</strong>.",
     "form": {
-      "name": "Full Name",
-      "name_placeholder": "Your name",
+      "name": "Your name",
+      "name_placeholder": "e.g. Aïcha Tchoua",
       "company": "Company",
-      "company_placeholder": "Your company name",
+      "company_placeholder": "e.g. Bonanjo Résidences",
       "email": "Email",
       "email_placeholder": "you@company.com",
       "phone": "Phone / WhatsApp",
-      "phone_placeholder": "+237 676 858 216",
+      "phone_placeholder": "+237 6XX XX XX XX",
       "need": "What do you need?",
-      "need_placeholder": "Select an option",
       "need_options": {
-        "website": "Website / Landing Page",
-        "booking": "Booking System",
-        "crm": "CRM / Client Management",
-        "ecommerce": "E-commerce / Online Store",
-        "automation": "Automation / Integrations",
-        "custom": "Custom Software",
-        "other": "Other"
+        "website": "Website",
+        "booking": "Booking",
+        "crm": "CRM",
+        "ecommerce": "E-commerce",
+        "automation": "Automations",
+        "ads": "Google / FB Ads",
+        "custom": "Custom software",
+        "other": "Not sure"
       },
-      "budget": "Budget Range",
-      "budget_placeholder": "Select a range",
+      "budget": "Budget",
       "budget_options": {
-        "small": "Under 500,000 FCFA",
-        "medium": "500,000 - 2,000,000 FCFA",
-        "large": "2,000,000 - 5,000,000 FCFA",
-        "enterprise": "5,000,000+ FCFA",
-        "unsure": "Not sure yet"
+        "small": "< 2M FCFA",
+        "medium": "2–5M FCFA",
+        "large": "5–15M FCFA",
+        "enterprise": "15M+ FCFA",
+        "unsure": "Not sure"
       },
-      "message": "Message",
-      "message_placeholder": "Tell us about your project...",
-      "submit": "Send Message",
-      "submitting": "Sending..."
+      "message": "Tell us about your project",
+      "message_placeholder": "We manage 240 rental units across Douala and need a tenant portal with Mobile Money rent collection…",
+      "privacy": "We'll never share your details.",
+      "submit": "Send inquiry",
+      "submitting": "Sending…"
     },
-    "success_title": "Message Sent!",
+    "success_title": "Message sent — we're on it.",
     "success_message": "Thank you for reaching out. We'll get back to you within 24 hours.",
     "info": {
-      "title": "Other Ways to Reach Us",
-      "whatsapp": "Chat on WhatsApp",
-      "email": "Email Us",
-      "phone": "Call Us",
-      "address_title": "Based in",
-      "address": "Douala, Cameroon"
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "phone": "Call us",
+      "studios": "Studio",
+      "studios_value": "Carrefour Des Immuables Kotto, Douala"
     }
   },
   "footer": {
-    "description": "We build business software and growth systems that help modern businesses automate work and get customers.",
-    "solutions": "Solutions",
-    "company": "Company",
-    "about": "About Us",
+    "description": "A software and growth studio for modern African businesses. Based in Douala · Serving clients across Africa · Remote-friendly.",
+    "col_services": "Services",
+    "col_products": "Products",
+    "col_company": "Company",
+    "col_legal": "Legal",
+    "about": "About",
     "contact": "Contact",
-    "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "copyright": "© 2024 BridgeYou. All rights reserved."
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© 2026 BridgeYou Innovations SARL · Built with love in Douala.",
+    "legal_line": "RCCM: CM-DLA-02-2025-B-13-00674 · Registered at CFCE Douala, Cameroon · Incorporated 22 May 2025",
+    "bilingual_note": "Disponible en français · Available in English"
   },
   "whatsapp": {
+    "prompt": "Chat with us — we reply fast",
     "tooltip": "Chat with us"
   }
 }
-

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
 import ProofRow from '../components/ProofRow';
 import ServiceCards from '../components/ServiceCards';
+import ProductsShowcase from '../components/ProductsShowcase';
 import CaseStudies from '../components/CaseStudies';
 import Process from '../components/Process';
 import Testimonials from '../components/Testimonials';
@@ -15,12 +16,14 @@ export default function Home() {
 
   const meta = {
     en: {
-      title: 'BridgeYou - Business Software & Growth Systems',
-      description: 'We build business software and growth systems that help modern businesses automate work and get customers. Custom websites, CRM, booking systems, and more.',
+      title: 'BridgeYou — Build Software. Grow Faster.',
+      description:
+        'A software and growth studio for modern African businesses. We build the websites, systems and automations that power clinics, retailers, real estate and service businesses.',
     },
     fr: {
-      title: 'BridgeYou - Logiciels d\'Entreprise & Systèmes de Croissance',
-      description: 'Nous développons des logiciels d\'entreprise et des systèmes de croissance qui aident les entreprises modernes à automatiser leur travail et à acquérir des clients.',
+      title: 'BridgeYou — Construisez. Grandissez plus vite.',
+      description:
+        "Un studio logiciel pour les entreprises africaines modernes. Nous concevons les sites, systèmes et automatisations qui font tourner cliniques, commerces, immobilier et services.",
     },
   };
 
@@ -34,18 +37,18 @@ export default function Home() {
         <meta property="og:description" content={meta[lang].description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bridgeyou.cm" />
-        <meta property="og:image" content="https://bridgeyou.cm/assets/logo.PNG" />
+        <meta property="og:image" content="https://bridgeyou.cm/assets/BridgeYou_Logo.png" />
       </Helmet>
 
       <Hero />
       <ProofRow />
       <ServiceCards />
+      <ProductsShowcase />
       <CaseStudies />
       <Process />
       <Testimonials />
-      <CTA />
       <FAQ />
+      <CTA />
     </>
   );
 }
-
