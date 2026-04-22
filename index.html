@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- Netlify form detection (hidden, used only at build time so Netlify can register the form schema) -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="text" name="company" />
       <input type="email" name="email" />
