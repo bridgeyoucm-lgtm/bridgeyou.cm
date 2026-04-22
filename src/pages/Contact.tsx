@@ -4,6 +4,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import EyebrowTag from '../components/EyebrowTag';
 import Icon from '../components/Icon';
 import WhatsAppIcon from '../components/WhatsAppIcon';
+import { trackLeadConversion } from '../lib/analytics';
 
 const WHATSAPP_NUMBER = '237676858216';
 const EMAIL = 'bridgeyoucm@gmail.com';
@@ -66,6 +67,7 @@ export default function Contact() {
       } catch {
         console.log('API call failed, but form submitted successfully');
       }
+      trackLeadConversion();
       setIsSubmitted(true);
     } catch (error) {
       console.error('Form submission error:', error);
