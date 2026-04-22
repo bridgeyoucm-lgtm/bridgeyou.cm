@@ -7,6 +7,8 @@ const Solutions = lazy(() => import('./pages/Solutions'));
 const Products = lazy(() => import('./pages/Products'));
 const Company = lazy(() => import('./pages/Company'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
 
 function LoadingSpinner() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="products" element={<Products />} />
           <Route path="company" element={<Company />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="terms" element={<Terms />} />
         </Route>
       </Routes>
     </Suspense>

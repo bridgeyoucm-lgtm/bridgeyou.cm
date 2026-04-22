@@ -346,5 +346,89 @@
   "whatsapp": {
     "prompt": "Chat with us — we reply fast",
     "tooltip": "Chat with us"
+  },
+  "privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "updated": "Last updated: 22 April 2026",
+    "intro": "BridgeYou Innovations SARL (\"BridgeYou\", \"we\", \"us\") respects your privacy. This policy explains what we collect when you visit bridgeyou.cm or engage us for a project, how we use that information, and the rights you have over it.",
+    "sections": [
+      {
+        "heading": "1. Information we collect",
+        "body": "When you contact us through the website form or WhatsApp we collect: your name, company, email, phone number, the type of service you're interested in, your indicative budget, and the message you send.\n\nWhen you simply browse bridgeyou.cm we collect anonymous usage information such as pages visited, approximate location derived from your IP, device type and referrer, through standard server logs and — where enabled — privacy-friendly analytics."
+      },
+      {
+        "heading": "2. How we use it",
+        "body": "We use the information you give us to reply to your enquiry, scope and deliver projects you engage us for, send project-related updates, and improve our services. We do not sell or rent your personal information. We do not use it for automated advertising targeting."
+      },
+      {
+        "heading": "3. Who sees it",
+        "body": "Access is limited to BridgeYou's founder and, where strictly necessary, a small number of vetted subcontractors bound by confidentiality. Form submissions are processed by Netlify (our hosting platform) and delivered to our business inboxes at bridgeyoucm@gmail.com and the founder's email."
+      },
+      {
+        "heading": "4. How long we keep it",
+        "body": "Enquiry and project correspondence is kept while the commercial relationship is active and for up to 5 years after, which is the standard business-record retention period in Cameroon. Anonymous analytics data is retained for up to 14 months."
+      },
+      {
+        "heading": "5. Your rights",
+        "body": "You can ask us at any time to: see what data we hold about you, correct it, or delete it. We will honour the request within 30 days unless we're legally required to retain specific records."
+      },
+      {
+        "heading": "6. Cookies",
+        "body": "We use strictly necessary cookies to make the site work (language preference, navigation). We do not set third-party tracking or advertising cookies."
+      },
+      {
+        "heading": "7. Changes to this policy",
+        "body": "If we materially change how we handle your data we'll update the date at the top of this page and, where appropriate, notify existing clients by email."
+      }
+    ],
+    "contact_label": "Questions about your data?",
+    "contact_body": "Write to bridgeyoucm@gmail.com or use the contact form — we respond within 24 hours."
+  },
+  "terms": {
+    "eyebrow": "Legal",
+    "title": "Terms of Service",
+    "updated": "Last updated: 22 April 2026",
+    "intro": "These terms apply to services provided by BridgeYou Innovations SARL (RCCM CM-DLA-02-2025-B-13-00674, Douala, Cameroon) to its clients, and to your use of bridgeyou.cm. By engaging us or browsing the site you accept these terms.",
+    "sections": [
+      {
+        "heading": "1. Services we offer",
+        "body": "BridgeYou builds custom websites, booking systems, CRMs, e-commerce platforms, workflow automations, and manages Google / Facebook ad campaigns. The precise scope, deliverables, timeline and pricing for any project are defined in a written proposal or contract signed by both parties."
+      },
+      {
+        "heading": "2. Engagement & proposals",
+        "body": "Our website is an introduction — not a binding offer. A project only begins once we have a signed proposal (email acceptance or countersigned PDF) and the agreed deposit is received."
+      },
+      {
+        "heading": "3. Pricing, invoicing and payment",
+        "body": "Prices are quoted in FCFA unless otherwise agreed. Fixed-price projects are typically billed 50% at kick-off and 50% at delivery; retainers are billed monthly in advance. Invoices are due within 15 days of issue. Late payments may suspend ongoing work until the balance is settled."
+      },
+      {
+        "heading": "4. Intellectual property",
+        "body": "Once final payment is received, the client owns the source code, brand assets and content that BridgeYou has produced specifically for them. BridgeYou retains rights to reusable components, internal libraries, frameworks and know-how used to build the deliverable. Third-party tools (fonts, libraries, payment APIs) remain under their own licences."
+      },
+      {
+        "heading": "5. Confidentiality",
+        "body": "Both parties treat information exchanged during an engagement — business plans, customer data, credentials, strategy — as confidential and will not share it with third parties without consent."
+      },
+      {
+        "heading": "6. Warranty and support",
+        "body": "Every project includes 30 days of free bug-fix support after launch. After that, maintenance and new features are billed hourly or under a monthly retainer. We do not warrant uninterrupted third-party services (hosting providers, payment processors, APIs)."
+      },
+      {
+        "heading": "7. Limitation of liability",
+        "body": "To the extent allowed by law, BridgeYou's total liability for any project is limited to the amount paid by the client for that specific project in the preceding 12 months. We are not liable for indirect, consequential or lost-profit damages."
+      },
+      {
+        "heading": "8. Termination",
+        "body": "Either party may end a project or retainer with 30 days' written notice. The client pays for work completed up to the termination date, and BridgeYou hands over all completed deliverables."
+      },
+      {
+        "heading": "9. Governing law",
+        "body": "These terms are governed by the laws of the Republic of Cameroon. Any dispute that cannot be resolved amicably will be settled by the competent courts of Douala."
+      }
+    ],
+    "contact_label": "Questions about these terms?",
+    "contact_body": "Write to bridgeyoucm@gmail.com or use the contact form and we will clarify before you engage."
   }
 }

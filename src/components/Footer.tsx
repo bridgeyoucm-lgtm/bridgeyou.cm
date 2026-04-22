@@ -38,8 +38,8 @@ export default function Footer() {
     {
       heading: t('footer.col_legal'),
       links: [
-        { label: t('footer.privacy'), to: '#' },
-        { label: t('footer.terms'), to: '#' },
+        { label: t('footer.privacy'), to: '/privacy' },
+        { label: t('footer.terms'), to: '/terms' },
       ],
     },
   ];

@@ -346,5 +346,89 @@
   "whatsapp": {
     "prompt": "Discutez avec nous — réponse rapide",
     "tooltip": "Discuter avec nous"
+  },
+  "privacy": {
+    "eyebrow": "Mentions légales",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 22 avril 2026",
+    "intro": "BridgeYou Innovations SARL (« BridgeYou », « nous ») respecte votre vie privée. Cette politique explique ce que nous collectons lorsque vous visitez bridgeyou.cm ou faites appel à nos services, comment nous utilisons ces informations, et les droits dont vous disposez.",
+    "sections": [
+      {
+        "heading": "1. Informations que nous collectons",
+        "body": "Quand vous nous contactez via le formulaire ou WhatsApp, nous recueillons : vos nom et prénom, société, email, numéro de téléphone, le type de service qui vous intéresse, votre budget indicatif et votre message.\n\nQuand vous naviguez sur bridgeyou.cm nous collectons des données d'usage anonymes — pages visitées, localisation approximative via IP, type d'appareil, provenance — à travers les journaux serveur standard et, si activé, des outils d'analyse respectueux de la vie privée."
+      },
+      {
+        "heading": "2. Comment nous utilisons ces données",
+        "body": "Nous utilisons les informations fournies pour répondre à votre demande, cadrer et livrer les projets confiés, envoyer les mises à jour liées au projet et améliorer nos services. Nous ne vendons ni ne louons vos données. Nous ne les utilisons pas pour du ciblage publicitaire automatisé."
+      },
+      {
+        "heading": "3. Qui y accède",
+        "body": "L'accès est limité au fondateur de BridgeYou et, si strictement nécessaire, à un petit nombre de sous-traitants choisis et tenus à la confidentialité. Les soumissions de formulaire sont traitées par Netlify (notre hébergeur) et livrées dans nos boîtes professionnelles (bridgeyoucm@gmail.com et l'email du fondateur)."
+      },
+      {
+        "heading": "4. Durée de conservation",
+        "body": "La correspondance liée à une demande ou à un projet est conservée tant que la relation commerciale est active et jusqu'à 5 ans après, ce qui correspond à la durée standard de conservation des archives commerciales au Cameroun. Les données analytiques anonymes sont conservées jusqu'à 14 mois."
+      },
+      {
+        "heading": "5. Vos droits",
+        "body": "Vous pouvez à tout moment demander : à consulter les données vous concernant, à les corriger, ou à les supprimer. Nous traitons la demande sous 30 jours, sauf obligation légale de conserver certains documents."
+      },
+      {
+        "heading": "6. Cookies",
+        "body": "Nous n'utilisons que des cookies strictement nécessaires au fonctionnement du site (préférence de langue, navigation). Aucun cookie tiers de pistage ou publicitaire n'est déposé."
+      },
+      {
+        "heading": "7. Modifications",
+        "body": "Si nous modifions substantiellement le traitement de vos données, nous mettrons à jour la date en haut de cette page et informerons les clients existants par email le cas échéant."
+      }
+    ],
+    "contact_label": "Des questions sur vos données ?",
+    "contact_body": "Écrivez à bridgeyoucm@gmail.com ou utilisez le formulaire — réponse sous 24 heures."
+  },
+  "terms": {
+    "eyebrow": "Mentions légales",
+    "title": "Conditions d'utilisation",
+    "updated": "Dernière mise à jour : 22 avril 2026",
+    "intro": "Ces conditions s'appliquent aux services fournis par BridgeYou Innovations SARL (RCCM CM-DLA-02-2025-B-13-00674, Douala, Cameroun) à ses clients, ainsi qu'à votre utilisation de bridgeyou.cm. En faisant appel à nos services ou en naviguant sur le site, vous les acceptez.",
+    "sections": [
+      {
+        "heading": "1. Services proposés",
+        "body": "BridgeYou conçoit des sites sur mesure, systèmes de réservation, CRM, plateformes e-commerce, automatisations, et gère des campagnes publicitaires Google et Facebook. Le périmètre précis, les livrables, le calendrier et le prix de chaque projet sont définis dans une proposition ou un contrat signé par les deux parties."
+      },
+      {
+        "heading": "2. Engagement & propositions",
+        "body": "Notre site constitue une présentation — pas une offre ferme. Un projet ne démarre qu'après signature d'une proposition (acceptation email ou PDF contresigné) et réception de l'acompte convenu."
+      },
+      {
+        "heading": "3. Tarifs, facturation et paiement",
+        "body": "Les prix sont indiqués en FCFA sauf mention contraire. Les projets au forfait sont généralement facturés 50 % au démarrage et 50 % à la livraison ; les retainers sont facturés mensuellement d'avance. Les factures sont payables sous 15 jours. Les retards de paiement peuvent suspendre les travaux en cours."
+      },
+      {
+        "heading": "4. Propriété intellectuelle",
+        "body": "Une fois le solde payé, le client est propriétaire du code source, des éléments de marque et du contenu produits spécifiquement pour lui. BridgeYou conserve les droits sur ses composants réutilisables, bibliothèques internes, frameworks et savoir-faire. Les outils tiers (polices, librairies, APIs de paiement) restent soumis à leurs propres licences."
+      },
+      {
+        "heading": "5. Confidentialité",
+        "body": "Les deux parties traitent comme confidentielles les informations échangées pendant un projet — plans d'affaires, données client, identifiants, stratégie — et ne les communiqueront à aucun tiers sans accord."
+      },
+      {
+        "heading": "6. Garantie et support",
+        "body": "Chaque projet inclut 30 jours de correction de bugs gratuits après le lancement. Au-delà, la maintenance et les nouvelles fonctionnalités sont facturées à l'heure ou via un retainer mensuel. Nous ne garantissons pas la continuité des services tiers (hébergeurs, processeurs de paiement, APIs)."
+      },
+      {
+        "heading": "7. Limitation de responsabilité",
+        "body": "Dans la limite autorisée par la loi, la responsabilité totale de BridgeYou sur un projet est limitée au montant payé par le client pour ce projet au cours des 12 derniers mois. Nous ne sommes pas responsables des dommages indirects, consécutifs ou de pertes de profits."
+      },
+      {
+        "heading": "8. Résiliation",
+        "body": "Chaque partie peut mettre fin à un projet ou à un retainer avec un préavis écrit de 30 jours. Le client règle les travaux réalisés jusqu'à la résiliation et BridgeYou remet tous les livrables finalisés."
+      },
+      {
+        "heading": "9. Droit applicable",
+        "body": "Ces conditions sont régies par les lois de la République du Cameroun. Tout litige non résolu à l'amiable sera porté devant les juridictions compétentes de Douala."
+      }
+    ],
+    "contact_label": "Des questions sur ces conditions ?",
+    "contact_body": "Écrivez à bridgeyoucm@gmail.com ou utilisez le formulaire — nous clarifions avant tout engagement."
   }
 }
